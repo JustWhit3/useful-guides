@@ -11,3 +11,4 @@ In this repository, a set of useful guides I wrote for beginners is show. The li
 > Please note that in case you have previously installed an old or not working ROOT version, you have to first uninstall it before proceed with a new one.
   * 💥 [**Quick Tips**](https://github.com/JustWhit3/useful-guides/tree/main/ROOT/Quick%20Tips): which contains tips and tricks for ROOT beginners. You can find something about the following topics:
     - [*Compiling and Running*](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Quick%20Tips/Compilation%20and%20Running.md): which contains for example some tips about how to compile ROOT macros which depend on other user classes or how to run ROOT macros without entering the ROOT command prompt every time.
+> Please tell me if you find typos or any kind of errors in the guides and I will correct them.

@@ -40,4 +40,4 @@ Open Xming by clicking two times on its icon (don't worry if nothing happens, it
 
 ### Virtual machine
 
-In this case you need to install a [virtual machine](https://www.virtualbox.org/) on Windows. Once you have done this you can run it and follow the [Ubuntu](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Ubuntu.md) installation instructions.
+In this case you need to install a [virtual machine](https://www.virtualbox.org/) on Windows. Once you have done this, you can run it and follow the [Ubuntu](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Ubuntu.md) installation instructions.

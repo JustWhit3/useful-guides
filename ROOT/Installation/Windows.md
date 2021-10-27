@@ -33,7 +33,7 @@ export DISPLAY=:0
 ```
 close the file and save it (Ctrl+X and then Ctrl+Y or Ctrl+S if you have an italian language shell). Now close the shell an reopen a new one and your installation is 100% completed. 
 
-To check it: run MobaXterm by clicking two times on its Windows desktop icon (you don't have to do anything else more) and follow the "Installation check" part of the [Ubuntu](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Ubuntu.md) installation guide to check if ROOT works correctly. Remember that you have to run Xming every time you want to use graphic interface on Ubuntu shell.
+To check it: run MobaXterm by clicking two times on its Windows desktop icon (you don't have to do anything else more) and follow the "Installation check" part of the [Ubuntu](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Ubuntu.md) installation guide to check if ROOT works correctly. Remember that you have to run MobaXterm every time you want to use graphic interface on Ubuntu shell.
 > Sometimes it may happens that a similar error is displayed when you try to run `new TBrowser()` command in ROOT shell:
 > ```shell
 > Error: Can't open display: :0

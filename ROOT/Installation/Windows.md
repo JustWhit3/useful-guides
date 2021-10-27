@@ -13,7 +13,7 @@ In this guide you can find two common ways of installing the C++ ROOT framework 
 
 If you have at least Windows 10 version installed you can proceed with this section, otherwise skip this section and go to the next one. 
 
-First of all you have to install on Windows [Windows subsystem for Linux](https://ubuntu.com/wsl) and a free-to-use X-server for the correct graphical visualization on the Ubuntu shell, I suggest you [Xming](https://sourceforge.net/projects/xming/). Then, you have to open a new Ubuntu shell (go to the search pannel, type "Ubuntu" and open it) and you can finally proceed with the ROOT installation by following one of the [Ubuntu](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Ubuntu.md) guides I wrote.
+First of all you have to install on Windows [Windows subsystem for Linux](https://ubuntu.com/wsl) and a free-to-use X-server for the correct graphical visualization on the Ubuntu shell, I suggest you [MobaXterm](https://mobaxterm.mobatek.net/). Then, you have to open a new Ubuntu shell (go to the search pannel, type "Ubuntu" and open it) and you can finally proceed with the ROOT installation by following one of the [Ubuntu](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Ubuntu.md) guides I wrote.
 
 > Please remember that if you want to see in which position of the Windows system is saved the Ubuntu subsystem you can type `explorer.exe .` in the Ubuntu shell.
 
@@ -33,10 +33,19 @@ export DISPLAY=:0
 ```
 close the file and save it (Ctrl+X and then Ctrl+Y or Ctrl+S if you have an italian language shell). Now close the shell an reopen a new one and your installation is 100% completed. 
 
-To check it: run Xming by clicking two times on its Windows desktop icon (don't worry if nothing happens, it is normal) and follow the "Installation check" part of the [Ubuntu](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Ubuntu.md) installation guide to check if ROOT works correctly.
-> Remember that you have to run Xming every time you want to use graphic interface on Ubuntu shell.
-
-Sometimes it may happens that an error is displayed
+To check it: run MobaXterm by clicking two times on its Windows desktop icon (you don't have to do anything else more) and follow the "Installation check" part of the [Ubuntu](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Ubuntu.md) installation guide to check if ROOT works correctly. Remember that you have to run Xming every time you want to use graphic interface on Ubuntu shell.
+> Sometimes it may happens that a similar error is displayed when you try to run `new TBrowser()` command in ROOT shell:
+> ```shell
+> Error: Can't open display: :0
+> ```
+> It means that your display variable is not set correctly and graphic interface dowsn't work. A solution may be to replace this definitin with:
+> ```shell
+> export DISPLAY=localhost:0.0
+> ```
+> in order to configure bash to use the local X-server. If also this doesn't work you can try to set the X-server IP address whcih could be found here `/ets/resolv/conf` by replacing the previous command with:
+> ```shell
+> export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
+> ```
 
 ### Virtual machine
 

@@ -15,7 +15,7 @@ Before choosing the installation method you have to firstly update your operatin
 softwareupdate -l
 ```
 After the system has been updated, decide in which folder you want to install ROOT and enter it.
-> If you want to install it in the `home` directory you don't have to do anything, just open a shell and continue with the following steps. Instead, if you want to install it for example in a folder named `dir`, which is located in `path/to/directory` path, you have to type `cd path/to/directory/dir` first, and than proceed with the guide.
+> If you want to install it in the `home` directory you don't have to do anything, just open a shell and continue with the following steps. Instead, if you want to install it for example in a folder named `dir`, which is located in `path/to/directory` path, you have to type `cd path/to/directory/dir` first, and then proceed with the guide.
 
 ### Proceed via [brew](https://brew.sh/index_it) (recommended)
 

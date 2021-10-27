@@ -1,6 +1,6 @@
 # Useful Guides
 In this repository, a set of useful guides I wrote for beginners is show. The list of the current folder of the repository is the following:
-> Please tell me if you find typos or any kind of errors in the guides and I will correct them.
+> Please contact me if you find typos or any kind of errors in the guides so I can correct them.
 - [**ROOT**](https://github.com/JustWhit3/useful-guides/tree/main/ROOT): which contains [ROOT](https://github.com/root-project/root) framework guides, and in particular the following sub-folders:
   * 💿 [**Installation**](https://github.com/JustWhit3/useful-guides/tree/main/ROOT/Installation): which contains installation guides I wrote for students of the [Laboratorio di Elettromagnetismo e Ottica [Modulo 3]](https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2021/434322) course at second year of bachelor degree in physics at University of Bologna. These guides are available for the following operating systems: [MacOS](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/MacOS.md), [Windows](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Windows.md) and [Ubuntu](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Ubuntu.md). An extra document for ROOT uninstallation is provided [Uninstall](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Uninstall.md).
        > Note that in case you have previously installed an old or not working ROOT version, you have to first uninstall it before proceed with a new one.

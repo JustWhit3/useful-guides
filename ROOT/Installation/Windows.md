@@ -2,9 +2,8 @@
 
 ## Table of contents
 - [Installation](#installation)
-  * [Windows subsystem for Linux](#proceed-via-winwdows-subsystem-for-linux)
-  * [Virtual machine](#proceed-via-virtual-machine)
-- [Installation check](#installation-check)
+  * [Windows subsystem for Linux](#winwdows-subsystem-for-linux)
+  * [Virtual machine](#virtual-machine)
 
 ## Installation
 
@@ -34,9 +33,12 @@ Go at the end of the file and add this line:
 ```shell
 export DISPLAY=:0
 ```
-Close the file and save it (Ctrl+X and than Ctrl+Y or Ctrl+S if you have an italian language shell). Now your installation is finished. 
+Close the file and save it (Ctrl+X and than Ctrl+Y or Ctrl+S if you have an italian language shell). Close the shelle an reopen a new one and now your installation is 100% completed. 
 
-Open Xming by clicking two times on its icon (don't worry if nothing happens, it is normal) and follow the "Installation check" part of the [Ubuntu](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Ubuntu.md) installation guide to check if ROOT works correctly.
+Run Xming by clicking two times on its icon (don't worry if nothing happens, it is normal) and follow the "Installation check" part of the [Ubuntu](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Ubuntu.md) installation guide to check if ROOT works correctly.
+> Remember that you have to run Xming every time you want to use graphic interface on Ubuntu shell.
+
+Sometimes it may happens that an error is displayed
 
 ### Virtual machine
 

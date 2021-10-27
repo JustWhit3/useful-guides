@@ -38,11 +38,11 @@ To check it: run MobaXterm by clicking two times on its Windows desktop icon (yo
 > ```shell
 > Error: Can't open display: :0
 > ```
-> It means that your display variable is not set correctly and graphic interface dowsn't work. A solution may be to replace this definitin with:
+> It means that your display variable is not set correctly and graphic interface doesn't work. A solution may be to replace this definition in the .bashrc file with:
 > ```shell
 > export DISPLAY=localhost:0.0
 > ```
-> in order to configure bash to use the local X-server. If also this doesn't work you can try to set the X-server IP address whcih could be found here `/ets/resolv/conf` by replacing the previous command with:
+> in order to configure bash to use the local X-server. If also this doesn't work you can try to set the X-server IP address which could be found here `/ets/resolv/conf` by replacing the previous command with:
 > ```shell
 > export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
 > ```

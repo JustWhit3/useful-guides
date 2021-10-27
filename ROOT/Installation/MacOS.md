@@ -8,7 +8,7 @@
 
 ## Installation
 
-In this guide you can find two common ways of installing the C++ ROOT framework in your MacOS operatins system. You can proceed via [brew](https://brew.sh/index_it) package manager (recommended) or alternatively via [MacPorts](https://www.macports.org/).
+In this guide you can find two common ways of installing the C++ ROOT framework in your MacOS operating system. You can proceed via [brew](https://brew.sh/index_it) package manager (recommended) or alternatively via [MacPorts](https://www.macports.org/).
 
 Before choosing the installation method you have to firstly update your operating system, in order to be sure that all programs are correctly updated for the installation. Open a fresh shell and type:
 ```shell

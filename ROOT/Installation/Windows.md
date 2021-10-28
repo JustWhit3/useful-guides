@@ -15,7 +15,7 @@ If you have at least Windows 10 version installed you can proceed with this sect
 
 First of all you have to install on Windows [Windows subsystem for Linux](https://ubuntu.com/wsl) and a free-to-use X-server for the correct graphical visualization on the Ubuntu shell, I suggest you [MobaXterm](https://mobaxterm.mobatek.net/). Then, you have to open a new Ubuntu shell (go to the search pannel, type "Ubuntu" and open it) and you can finally proceed with the ROOT installation by following one of the [Ubuntu](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Ubuntu.md) guides I wrote.
 
-> Please remember that if you want to see in which position of the Windows system is saved the Ubuntu subsystem you can type `explorer.exe .` in the Ubuntu shell.
+> Please remember that if you want to see in which position of the Windows system is saved the Ubuntu subsystem you can type `explorer.exe .` (note the final dot) in the Ubuntu shell.
 
 After the ROOT installation is completed, you need to install the packages useful for graphical visualization; type this on the Ubuntu shell:
 ```shell

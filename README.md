@@ -27,6 +27,6 @@ Here the list of the current folder of the repository:
 ## Credits
 
 Some of the material of this repository has been taken and modified / mixed from the following people / courses:
-- [ROOT installation for Ubuntu, MacOS and Windows](https://github.com/JustWhit3/useful-guides/tree/main/ROOT/Installation): from the slides of Prof. [Silvia Arcelli](https://www.unibo.it/sitoweb/silvia.arcelli) from the course "[Laboratorio di Elettromagnetismo e Ottica [Modulo 3]](https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2021/434322)" at University of Bologna.
-- [ROOT installation from alternative ways](https://github.com/JustWhit3/useful-guides/tree/main/ROOT/Installation): from the CERN ROOT [installing page](https://root.cern/install/). 
+- ROOT installation for Ubuntu, MacOS and Windows: from the slides of Prof. [Silvia Arcelli](https://www.unibo.it/sitoweb/silvia.arcelli) from the course "[Laboratorio di Elettromagnetismo e Ottica [Modulo 3]](https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2021/434322)" at University of Bologna.
+- ROOT installation from alternative ways: from the CERN ROOT [installing page](https://root.cern/install/). 
 

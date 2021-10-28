@@ -7,14 +7,14 @@
 
 ## Introduction
 
-Before starting talking about the repository I want to inform you about some things:
+In this repository you can find a set of useful guides I wrote for beginners. Before starting talking about the repository I want to inform you about some things:
 - Please, contact me if you find a typo, an error or something that seems not so clear in the repository, I will modify it as soon as possible. In this case please write me to my institutional mail: gianluca.bianco4@unibo.it.
 - Contact me if you need help understanding something, especially if you are a student. In this case I would be very happy to help you.
 - In case in which material is taken and modified from other people / courses they will be mentioned in the [Credits](#credits) section.
 
 ## Structure of the repository
 
-In this repository you can find a set of useful guides I wrote for beginners. Here the list of the current folder of the repository:
+Here the list of the current folder of the repository:
 - [**ROOT**](https://github.com/JustWhit3/useful-guides/tree/main/ROOT): which contains [ROOT](https://github.com/root-project/root) framework guides, and in particular the following sub-folders:
   * 💿 [**Installation**](https://github.com/JustWhit3/useful-guides/tree/main/ROOT/Installation): which contains installation guides I wrote for students of the bachelor degree in physics at University of Bologna. These guides have been written by considering all the common issues the students had during the framework installation procedure. They are available for the following operating systems: [MacOS](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/MacOS.md), [Windows](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Windows.md) and [Ubuntu](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Ubuntu.md). An extra document for ROOT uninstallation is provided [Uninstall](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Uninstall.md).
        > Note: in case you have previously installed an old or not working ROOT version, you have to first uninstall it before proceeding with a new one.

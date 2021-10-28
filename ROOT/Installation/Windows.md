@@ -23,9 +23,9 @@ sudo apt-get install libtiff5 x11-apps
 ```
 You have now to set the display variable: be sure of being in the `home` directory (type `cd` command in a fresh shell if you need) and open the .bashrc file:
 ```shell
-editor .bashrc
+nano .bashrc
 ```
-> Editor is the name of the editor you want to use to open the file (you can use nano, *gedit*, *emacs*, *code* or whatever you prefer; as a default use nano).
+> `nano` is the name of the default editor of Ubuntu. You can also use better editors like *gedit*, *emacs*, *code* or whatever you prefer.
 
 go at the end of the file and add this line:
 ```shell

@@ -27,5 +27,5 @@ Here the list of the current folder of the repository:
 ## Credits
 
 Some of the material of this repository has been taken and modified from the following people / courses:
-- [ROOT installation](https://github.com/JustWhit3/useful-guides/tree/main/ROOT/Installation): from the slides of Prof. [Silvia Arcelli](https://www.unibo.it/sitoweb/silvia.arcelli) from the course [Laboratorio di Elettromagnetismo e Ottica [Modulo 3]](https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2021/434322) at University of Bologna.
+- [ROOT installation](https://github.com/JustWhit3/useful-guides/tree/main/ROOT/Installation): from the slides of Prof. [Silvia Arcelli](https://www.unibo.it/sitoweb/silvia.arcelli) from the course "[Laboratorio di Elettromagnetismo e Ottica [Modulo 3]](https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2021/434322)" at University of Bologna.
 

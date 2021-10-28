@@ -35,19 +35,22 @@ sudo apt-get install gfortran libssl-dev libpcre3-dev xlibmesa-glu-dev libglew1.
 Once you have completed the prerequisites you can proceed with the real installation. As previously mentioned, this is (in my opinion) maybe the most efficient and intuitive way to install the ROOT framework. First of all you have to download the release from this [link](https://root.cern/install/all_releases/); click on the latest release button and choose the binary distribution corresponding to your operating system version.
 > To know the operating system version of your computer simply type this command on the shell: `lsb_release -a`.
 
-> If you are installing ROOT in an Ubuntu shell of Windows you can type this command on the Ubuntu shell `explorer.exe .` (note the final dot) in order to know in which position of the Windows system is stored the Ubuntu folder. Then you can copy manually the downloaded ROOT folder from Windows to the Ubuntu previously mentioned folder.
+> If you are installing ROOT on an Ubuntu shell of Windows you can type this command on the Ubuntu shell itself `explorer.exe .` (note the final dot) in order to know in which position of the Windows system is stored the Ubuntu folder. Then you can copy manually the downloaded ROOT folder from Windows to the Ubuntu previously mentioned folder.
+> 
 Once the zipped folder is downloaded you have to move it from the download section to the $HOME:
 ```shell
 mv $HOME/Download/root_vx.xx.xx.Linux-ubuntu18-x86_64-gccx.x.tar.gz $HOME/.
 ```
 where `Downloads` can be replaced with the name of the download folder of your computer (in italian usually is `Scaricati`).
 > Pay attention that `root_vx.xx.xx.Linux-ubuntu18-x86_64-gccx.x.tar.gz` have to be replaced with the name of the version you are installing. For example if you are installing the Ubuntu 20 binary it would be something like `root_v6.24.06.Linux-ubuntu20-x86_64-gcc9.3.tar.gz`.
+
 Now unzip it by typing this two commands:
 ```shell
 gunzip root_vx.xx.xx.Linux-ubuntu18-x86_64-gccx.x.tar.gz
 tar -xvf root_vx.xx.xx.Linux-ubuntu18-x86_64-gccx.x.tar
 ```
 > Remember again to replace the `x` with the version numbers.
+
 Ok, now if you enter:
 ```shell
 ls
@@ -61,6 +64,7 @@ and open the .bashrc file:
 nano .bashrc
 ```
 > `nano` is the name of the default editor of Ubuntu. You can also use better editors like *gedit*, *emacs*, *code* or whatever you prefer.
+
 Go at the end of the file and add this line:
 ```shell
 source root/bin/thisroot.sh
@@ -74,6 +78,7 @@ Another way to install ROOT is via source code. This is another good way to inst
 
 Once you have completed the prerequisites you can proceed with the installation. First of all you have to download the release from this [link](https://root.cern/install/all_releases/); click on the latest release button and choose the source distribution link for download.
 > If you are installing ROOT in an Ubuntu shell of Windows you can type this command on the Ubuntu shell `explorer.exe .` (note the final dot) in order to know in which position of the Windows system is stored the Ubuntu folder. Then you can copy manually the downloaded ROOT folder from Windows to the Ubuntu previously mentioned folder.
+
 Once the zipped folder is downloaded you have to move it from the download section to the home:
 ```shell
 mv $HOME/Downloads/root_vx.xx.xx.source.tar.gz
@@ -81,12 +86,14 @@ $HOME/.
 ```
 where `Downloads` can be replaced with the name of the download folder of your computer (in italian usually is `Scaricati`).
 > Pay attention that `root_vx.xx.xx.source.tar.gz` have to be replaced with the name of the version you are installing. For example if you are installing the latest version it would be something like `root_v6.24.06.source.tar.gz`.
+
 Now unzip it, by typing this two commands:
 ```shell
 gunzip root_vx.xx.xx.source.tar.gz
 tar -xvf root_vx.xx.xx.source.tar.tar
 ```
 > Remember again to replace the `x` with the version numbers.
+
 Ok, now if you enter:
 ```shell
 ls
@@ -107,6 +114,7 @@ Configure it:
 cmake $HOME/root-x.xx.xx
 ```
 > Please pay attention: if you planned to install ROOT in a different directory from the `$HOME` one, you have to replace the above command with `cmake path/to/folder/root-x.xx.xx` where `path/to/folder/` is the path to the folder in which you downloaded ROOT previously.
+
 Compile it (this will take a while):
 ```shell
 cmake --build .
@@ -120,6 +128,7 @@ and open the .bashrc file:
 nano .bashrc
 ```
 > `nano` is the name of the default editor of Ubuntu. You can also use better editors like *gedit*, *emacs*, *code* or whatever you prefer.
+
 Go at the end of the file and add this line:
 ```shell
 source root-x.xx.xx/bin/thisroot.sh

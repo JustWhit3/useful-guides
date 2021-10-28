@@ -54,11 +54,7 @@ To check it: run MobaXterm by clicking two times on its Windows desktop icon (yo
 > ```shell
 > whoami
 > ```
-> If 
-> ```shell
-> root
-> ```
-> is displayed you have to switch from *root* user to the real user of your machine; supposing the real user is called *name* you can do it by typing:
+> If `root` is displayed you have to switch from *root* user to the real user of your machine; supposing the real user is called *name* you can do it by typing:
 > ```shell
 > su - name
 > ```

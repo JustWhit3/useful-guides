@@ -13,7 +13,7 @@ In this guide you can find two common ways of installing the C++ ROOT framework 
 
 If you have at least Windows 10 version installed you can proceed with this section, otherwise skip this section and go to the next one. 
 
-First of all you have to install on Windows [Windows subsystem for Linux](https://ubuntu.com/wsl) and a free-to-use X-server for the correct graphical visualization on the Ubuntu shell, I suggest you [MobaXterm](https://mobaxterm.mobatek.net/). Then, you have to open a new Ubuntu shell (go to the search pannel, type "Ubuntu" and open it) and you can finally proceed with the ROOT installation by following one of the [Ubuntu](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Ubuntu.md) guides I wrote.
+First of all you have to install on Windows [Windows subsystem for Linux](https://ubuntu.com/wsl) and a free-to-use X-server for the correct graphical visualization on the Ubuntu shell, I suggest you [MobaXterm](https://mobaxterm.mobatek.net/). Then, you have to open a new Ubuntu shell (go to the search pannel, type "Ubuntu" and open it) and you can finally proceed with the ROOT installation by following one of the [Ubuntu](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Ubuntu.md) guides I wrote, but come back here once you have finished with them, since there is a very last passage to do.
 
 > Please remember that if you want to see in which position of the Windows system is saved the Ubuntu subsystem you can type `explorer.exe .` (note the final dot) in the Ubuntu shell.
 

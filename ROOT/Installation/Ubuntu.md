@@ -58,7 +58,7 @@ go at the end of the file and add this line:
 ```shell
 source root/bin/thisroot.sh
 ```
-> Please pay attention: if you planned to install ROOT in a different directory from the `home` one, you have to replace the above command with `source path/to/folder/root/bin/thisroot.sh` where `path/to/folder/` is the path to the folder in which you installed ROOT previously.
+> Please pay attention: if you planned to install ROOT in a different directory from the `$HOME` one, you have to replace the above command with `source path/to/folder/root/bin/thisroot.sh` where `path/to/folder/` is the path to the folder in which you installed ROOT previously.
 Now close the file and save it (Ctrl+X and then Ctrl+Y or Ctrl+S if you have an italian language shell). Close also the shell an reopen a new one and your installation is 100% completed. 
 
 ### Proceed via source code
@@ -87,5 +87,6 @@ then, type this command in order to see if also the graphical tools work:
 ```shell
 root [0] new TBrowser()
 ```
-If a new window is opened then you have 100% completed the ROOT installation
+If a new window is opened then you have 100% completed the ROOT installation.
 > Please note that `root [0]` indicates the line number of the ROOT command prompt in which you are writing the current ROOT bash command, therefore, from the previous line, you have to copy only `new TBrowser()` in your shell.
+> Note also that if you are running `new TBrowser()` command on Windows subsistem for Linux and it gives you and error you probably missed the final part of the [Windows subsistem for Linux ROOT installation[(https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Windows.md).

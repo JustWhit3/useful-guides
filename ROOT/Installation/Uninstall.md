@@ -2,7 +2,7 @@
 
 PLease read the following guide carefully in order to uninstall the framework correctly. The procedure is the same whatever is the operating system you used to install ROOT.
 
-To uninstall the ROOT framework from your computer you have first to open an Ubuntu / MacOS shell and find the path in which the ROOT folder is located (without entering it). If this path corresponds to the `home` folder you don't have to do anything, but if it is different you have to reach it with:
+To uninstall the ROOT framework from your computer you have first to open an Ubuntu / MacOS shell and find the path in which the ROOT folder is located (without entering it). If this path corresponds to the `$HOME` directory you don't have to do anything, but if it is different you have to reach it with:
 ```shell
 cd /path/to/root/folder
 ```
@@ -18,9 +18,9 @@ rm -rf root-folder-name
 ```
 where `root-folder-name` is the name of the folder containing the ROOT code.
 > If you have to delete more than one folder, repeat the above command for each folder name or put all the folder names in one line separated by a space.
-Now, if you are not already in the `home` directory reach it by typing
+Now, if you are not already in the `$HOME` directory reach it by typing:
 ```shell
-cd
+cd $HOME
 ```
 and opend the .bashrc file with this command:
 ```shell

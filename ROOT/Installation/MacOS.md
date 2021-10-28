@@ -10,7 +10,7 @@
 
 In this guide you can find two common ways of installing the C++ ROOT framework in your MacOS operating system. You can proceed via [brew](https://brew.sh/index_it) package manager (recommended) or alternatively via [MacPorts](https://www.macports.org/).
 
-Before choosing the installation method you have to firstly update your operating system, in order to be sure that all programs are correctly updated for the installation. Open a fresh shell and type:
+Before choosing the installation method you have firstly to update your operating system, in order to be sure that all programs are correctly updated for the installation. Open a fresh shell and type:
 ```shell
 softwareupdate -l
 ```
@@ -42,7 +42,7 @@ First, you have to install Xcode developer package:
 ```shell
 xcode-select --install
 ```
-Than, you can install [MacPorts](https://www.macports.org/) by clicking on the link and following the guide. And finally you have to type this command:
+Then, you can install [MacPorts](https://www.macports.org/) by clicking on the link and following the guide. And finally you have to type this command:
 ```shell
 port install root6
 ```
@@ -65,9 +65,9 @@ If the framework has been installed you should see something like this:
 
 root [0] 
 ```
-than, type this command in order to see if also the graphical tools work:
+then, type this command in order to see if also the graphical tools work:
 ```shell
 root [0] new TBrowser()
 ```
-If a new window is opened than you have 100% completed the ROOT installation
+If a new window is opened then you have 100% completed the ROOT installation
 > Please note that `root [0]` indicates the line number of the ROOT command prompt in which you are writing the current ROOT bash command, therefore, from the previous line, you have to copy only `new TBrowser()` in your shell.

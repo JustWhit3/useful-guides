@@ -130,6 +130,25 @@ Now close the file and save it (Ctrl+X and then Ctrl+Y or Ctrl+S if you have an 
 
 ### Other installation methods (not recommended)
 
+There are other ways to install ROOT via package managers, however, since these packages are not maintained by the ROOT team, but by helpful members of the community, there may be issues in the installation regarding different versions of the operating system you use or many other. Therefore, consider this kind of installation as a last-chance installation method and use it only in case in which you failed with both the previous installations with binary and source and you plan to host a temporary root installation until you will be able to install a good one.
+
+The first method is with [Conda](https://www.anaconda.com/products/individual) package manager. You can get it from the previos link and type this commands in order to install ROOT:
+```shell
+conda config --set channel_priority strict
+conda create -c conda-forge --name environment root
+conda activate environment
+```
+and the installation is done.
+> Setting channel_priority to strict is required to avoid conflicts on some platforms
+> Further instructions on how to use this package can be found [here](https://iscinumpy.gitlab.io/post/root-conda/).
+
+The second method is with the *snap* package manager (which can be installed from [here](https://snapcraft.io/docs/installing-snap-on-ubuntu)):
+```shell
+sudo snap install root-framework
+snap run root-framework
+```
+and the installation is completed.
+
 ## Installation check
 
 Once tou have installed root, you need to check if all the features have been correctly installed. Close the current shell and reopen a new one and type:

@@ -1,13 +1,16 @@
 # Useful Guides
 
 ## Table of contents
+- [Introduction](#introduction)
 - [Structure of the repository](#structure-of-the-repository)
 - [Credits](#credits)
 
-Before starting talking about the repository I want to tell you some things:
-1) Contact me if you find a typo, an error or something that seems not so clear in the repository, I will modify it as soon as possible. In this case please write me to my institutional mail: gianluca.bianco4@unibo.it.
-2) Contact me if you need help understanding something, especially if you are a student. In this case I would be very happy to help you.
-3) In case in which material is taken and modified from other people / courses they will be mentioned in the [Credits](#credits) section.
+## Introduction
+
+Before starting talking about the repository I want to inform you about some things:
+- Please, contact me if you find a typo, an error or something that seems not so clear in the repository, I will modify it as soon as possible. In this case please write me to my institutional mail: gianluca.bianco4@unibo.it.
+- Contact me if you need help understanding something, especially if you are a student. In this case I would be very happy to help you.
+- In case in which material is taken and modified from other people / courses they will be mentioned in the [Credits](#credits) section.
 
 ## Structure of the repository
 

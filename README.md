@@ -8,3 +8,4 @@ In this repository, a set of useful guides I wrote for beginners is show. The li
        > Hint: if you have to download an Ubuntu release (for example for Windows) it is warmly suggested to download an [LTS](https://ubuntu.com/blog/what-is-an-ubuntu-lts-release) version of it.
   * 💥 [**Quick Tips**](https://github.com/JustWhit3/useful-guides/tree/main/ROOT/Quick%20Tips): which contains tips and tricks for ROOT beginners. You can find something about the following topics:
     - [*Compiling and Running*](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Quick%20Tips/Compilation%20and%20Running.md): which contains for example some tips about how to compile ROOT macros which depend on other user classes or how to run ROOT macros without entering the ROOT command prompt every time.
+    - [*ROOT on VS Code*](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Quick%20Tips/ROOT%20on%20VS%20Code.md): which explains how to set ROOT framework on VS Code.

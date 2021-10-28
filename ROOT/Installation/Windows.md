@@ -21,7 +21,11 @@ After the ROOT installation is completed, you need to install the packages usefu
 ```shell
 sudo apt-get install libtiff5 x11-apps
 ```
-You have now to set the display variable: be sure of being in the `home` directory (type `cd` command in a fresh shell if you need) and open the .bashrc file:
+You have now to set the display variable: be sure of being in the `$HOME` directory:
+```shell
+cd $HOME
+```
+and open the .bashrc file:
 ```shell
 nano .bashrc
 ```

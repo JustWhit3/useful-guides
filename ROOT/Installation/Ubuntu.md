@@ -185,3 +185,5 @@ If a new window is opened then you have 100% completed the ROOT installation.
 > Please note that `root [0]` indicates the line number of the ROOT command prompt in which you are writing the current ROOT bash command, therefore, from the previous line, you have to copy only `new TBrowser()` in your shell.
 
 > Note also that if you are running `new TBrowser()` command on Windows subsistem for Linux and it gives you and error you probably missed the final part of the [Windows subsistem for Linux ROOT installation[(https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Windows.md).
+
+> In some very rare cases may happens also that some libraries are not recognized when trying to load or run a macro. You may try to solve this issue installing the package dependencies as root user. See this [video guide](https://www.youtube.com/watch?v=nkKxNBuqsB0&t=186s).

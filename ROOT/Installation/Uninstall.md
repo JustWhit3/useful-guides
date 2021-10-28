@@ -1,6 +1,6 @@
 # Uninstall ROOT framework
 
-PLease read the following guide carefully in order to uninstall the framework correctly.
+PLease read the following guide carefully in order to uninstall the framework correctly. The procedure is the same whatever is the operating system you used to install ROOT.
 
 To uninstall the ROOT framework from your computer you have first to open an Ubuntu / MacOS shell and find the path in which the ROOT folder is located (without entering it). If this path corresponds to the `home` folder you don't have to do anything, but if it is different you have to reach it with:
 ```shell
@@ -24,6 +24,11 @@ cd
 ```
 and opend the .bashrc file with this command:
 ```shell
-editor .bashrc
+nano .bashrc
 ```
-where editor is the editor name you use to open files (ex: *nano*, *gedit*, *emacs*, *code* etc... Default is *nano*).
+where `nano` is the default editor you can use to open files but you can use a better one if you prefer (ex: *gedit*, *emacs*, *code* etc...), and search for this line:
+```shell
+source root/bin/thisroot.sh
+```
+and remove it.
+> Sometimes the path may be different depending on the name of the root folder you had when you installed ROOT, typically: `root-build` or `root-x.xx.xx` (where `x.xx.xx` is the ROOT version name, for example 6.20.02).

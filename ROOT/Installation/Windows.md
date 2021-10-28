@@ -21,6 +21,8 @@ After the ROOT installation is completed, you need to install the packages usefu
 ```shell
 sudo apt-get install libtiff5 x11-apps
 ```
+> You may encounter a new error `libtinfo.so.5: cannot open shared object file: No such file or directory`. In this case you can easily solve by downloading it separately with this command `sudo apt-get install libncurses5`.
+
 You have now to set the display variable: be sure of being in the `$HOME` directory:
 ```shell
 cd $HOME

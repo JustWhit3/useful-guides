@@ -25,9 +25,10 @@ sudo apt-get install git dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev l
 ```
 Other not mandatory, but suggested packages to install are:
 ```shell
-sudo apt-get install gfortran libssl-dev libpcre3-dev xlibmesa-glu-dev libglew1.5-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl0-dev libqt4-dev
+sudo apt-get install gfortran libssl-dev libpcre3-dev xlibmesa-glu-dev libglew1.5-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl0-dev
 ```
 > Please note that it is warmly suggested to install also the prerequisite packages in order to avoid encountering future ROOT errors about libraries paths not found.
+> There should be another very optional library to install which is `libqt4-dev`. Since if you run `sudo apt-get install libqt4-dev` it may gives you an error, you may try to manually add the repository with this command `sudo add-apt-repository ppa:rock-core/qt4`. If also this doesn't work don't worry, you can proceed with the guide also without having `libqt4-dev` installed and all will works perfectly. The fact is that the `libqt4-dev` package was dropped from Ubuntu after 19.10 and is indeed not in the 20.04 repositories.
 
 ### Proceed via binary distribution (warmly recommended)
 

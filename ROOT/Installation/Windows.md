@@ -2,14 +2,14 @@
 
 ## Table of contents
 - [Installation](#installation)
-  * [Proceed via Windows subsystem for Linux](#proceed-via-winwdows-subsystem-for-linux)
+  * [Proceed via Windows subsystem for Linux (recommended)](#proceed-via-winwdows-subsystem-for-linux-recommended)
   * [Proceed via virtual machine](#proceed-via-virtual-machine)
 
 ## Installation
 
 In this guide you can find two common ways of installing the C++ ROOT framework in your Windows operating system. You can proceed via [Windows subsystem for Linux](https://ubuntu.com/wsl) (recommended) if you have at least Windows 10 version or alternatively via [virtual machine](https://www.virtualbox.org/). In both these cases be sure that your operating system is updated.
 
-### Proceed via Windows subsystem for Linux
+### Proceed via Windows subsystem for Linux (recommended)
 
 If you have at least Windows 10 version installed you can proceed with this section, otherwise skip this section and go to the next one. 
 
@@ -50,7 +50,15 @@ To check it: run MobaXterm by clicking two times on its Windows desktop icon (yo
 > ```shell
 > export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
 > ```
+> Sometimes also this latter case doesn't solve the problem. In this situation you can try to install a different free-to-use X-server like [Xming](https://sourceforge.net/projects/xming/) or [VcXsrv](https://sourceforge.net/projects/vcxsrv/). Check also if you are trying to run commands as user and not as root: type:
+> ```shell
+> whoami
+> ```
+If `root` is displayed you have to switch from *root/ user to the real user of your machine; supposing the real user is called *name* you can do it by typing:
+> ```shell
+> su - name
+> ```
 
 ### Proceed via virtual machine
 
-In this case you need to install a [virtual machine](https://www.virtualbox.org/) on Windows. Once you have done this, you can run it and follow one of the [Ubuntu](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Ubuntu.md) installation instructions.
+In this case you need to install a [virtual machine](https://www.virtualbox.org/) on Windows (not so easy). Once you have done this, you can run it and follow one of the [Ubuntu](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Ubuntu.md) installation instructions.

@@ -17,7 +17,7 @@ sudo apt-get upgrade
 sudo apt-get update
 ```
 After the system has been updated, decide in which folder you want to install ROOT and enter it through the shell.
-> If you want to install it in the `home` directory you don't have to do anything, just open a shell and continue with the following steps. Instead, if you want to install it for example in a folder named `dir`, which is located in `path/to/directory` path, you have to type `cd path/to/directory/dir` first, and then proceed with the guide.
+> If you want to install it in the `$HOME` directory you don't have to do anything, just open a shell and continue with the following steps. Instead, if you want to install it for example in a folder named `dir`, which is located in `path/to/directory` path, you have to type `cd path/to/directory/dir` first, and then proceed with the guide.
 
 First of all you have to install all the prerequisite packages. Mandatory are (type the following command on the shell):
 ```shell
@@ -35,7 +35,7 @@ Once you have completed the prerequisites you can proceed with the real installa
 > To know the operating system version of your computer simply type this command on the shell: `lsb_release -a`.
 
 > If you are installing ROOT in an Ubuntu shell of Windows you can type this command on the Ubuntu shell `explorer.exe .` (note the final dot) in order to know in which position of the Windows system is stored the Ubuntu folder. Then you can copy manually the downloaded ROOT folder from Windows to the Ubuntu previously mentioned folder.
-Once the zipped folder is downloaded you have to move it from the download section to the home:
+Once the zipped folder is downloaded you have to move it from the download section to the $HOME:
 ```shell
 mv $HOME/Download/root_vx.xx.xx.Linux-ubuntu18-x86_64-gccx.x.tar.gz $HOME/.
 ```

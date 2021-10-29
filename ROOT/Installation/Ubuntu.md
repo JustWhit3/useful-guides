@@ -171,11 +171,13 @@ and the installation is completed.
 
 ## Installation check
 
-Once tou have installed root, you need to check if all the features have been correctly installed. Close the current shell and reopen a new one and type:
+Once tou have installed root, you need to check if all the features have been correctly installed. O
+
+pen a new shell and type:
 ```shell
 root
 ```
-If the framework has been installed you should see something like this:
+If the framework has been correctly installed you should see something like this:
 ```shell
    ------------------------------------------------------------------
   | Welcome to ROOT 6.20/02                        https://root.cern |
@@ -187,7 +189,7 @@ If the framework has been installed you should see something like this:
 
 root [0] 
 ```
-then, type this command in order to see if also the graphical tools work:
+now you are able to run and compile macros. Then, type this command to see if also graphical tools work:
 ```shell
 root [0] new TBrowser()
 ```

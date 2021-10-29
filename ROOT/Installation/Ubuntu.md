@@ -101,25 +101,26 @@ ls
 you can see that, among all the folders of your system there is also a new one called `root-x.xx.xx` with the version numbers instead of `x`.
 
 Now you have to do the following passages:
+
 a) Create a build directory:
 ```shell
 mkdir root-build
 ```
-and enter it:
+b) nter it:
 ```shell
 cd root-build
 ```
-Configure it:
+c) configure it:
 ```shell
 cmake $HOME/root-x.xx.xx
 ```
 > Please pay attention: if you planned to install ROOT in a different directory from the `$HOME` one, you have to replace the above command with `cmake path/to/folder/root-x.xx.xx` where `path/to/folder/` is the path to the folder in which you downloaded ROOT previously.
 
-Compile it (this will take a while):
+d) compile it (this will take a while):
 ```shell
 cmake --build .
 ```
-To complete the installation you have to set up the ROOT environment; in order to avoid repeating this latter command every time you enter the shell, you can do the following passages. Go in the `$HOME` directory:
+FInally, to complete the installation you have to set up the ROOT environment; in order to avoid repeating this latter command every time you enter the shell, you can do the following passages. Go in the `$HOME` directory:
 ```shell
 cd $HOME
 ```
@@ -127,7 +128,7 @@ and open the .bashrc file:
 ```shell
 nano .bashrc
 ```
-> `nano` is the name of the default editor of Ubuntu. You can also use better editors like *gedit*, *emacs*, *code* or whatever you prefer.
+> *nano* is the name of the default editor of Ubuntu. You can also use better editors like *gedit*, *emacs*, *code* or whatever you prefer.
 
 Go at the end of the file and add this line:
 ```shell
@@ -136,6 +137,7 @@ source root-x.xx.xx/bin/thisroot.sh
 > Again remember to replace the `x`.
 
 > Please pay attention: if you planned to install ROOT in a different directory from `$HOME`, you have to replace the above command with `source path/to/folder/root-x.xx.xx/bin/thisroot.sh` where `path/to/folder/` is the path to the folder in which you installed ROOT previously.
+
 Now close the file and save it (Ctrl+X and then Ctrl+Y or Ctrl+S if you have an italian language shell). Close also the shell an reopen a new one and your installation is 100% completed. 
 
 ### Other installation methods (not recommended)
@@ -184,6 +186,6 @@ root [0] new TBrowser()
 If a new window is opened then you have 100% completed the ROOT installation.
 > Please note that `root [0]` indicates the line number of the ROOT command prompt in which you are writing the current ROOT bash command, therefore, from the previous line, you have to copy only `new TBrowser()` in your shell.
 
-> Note also that if you are running `new TBrowser()` command on Windows subsistem for Linux and it gives you and error you probably missed the final part of the [Windows subsistem for Linux ROOT installation[(https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Windows.md).
+> Note also that if you are running `new TBrowser()` command on Windows subsistem for Linux and it gives you and error you probably missed the final part of the [Windows subsistem for Linux ROOT installation](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Windows.md).
 
 > In some very rare cases may happens also that some libraries are not recognized when trying to load or run a macro. You may try to solve this issue installing the package dependencies as root user. See this [video guide](https://www.youtube.com/watch?v=nkKxNBuqsB0&t=186s).

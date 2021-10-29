@@ -2,7 +2,7 @@
 
 ## Table of contents
 - [Installation](#installation)
-  * [Proceed via Windows subsystem for Linux (recommended)](#proceed-via-winwdows-subsystem-for-linux-recommended)
+  * [Proceed via Windows subsystem for Linux (recommended)](#proceed-via-windows-subsystem-for-linux--recommended-)
   * [Proceed via virtual machine](#proceed-via-virtual-machine)
 
 ## Installation

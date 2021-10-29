@@ -36,7 +36,7 @@ After the system has been updated, decide in which folder you want to install RO
 Once you have completed the prerequisites you can proceed with the real installation. As previously mentioned, this is (in my opinion) maybe the most efficient and intuitive way to install the ROOT framework. First of all you have to download the release from this [link](https://root.cern/install/all_releases/); click on the **latest** release button and choose the binary distribution corresponding to your operating system version.
 > To know the operating system version of your computer simply type this command on the shell: `lsb_release -a`.
  
-Once the zipped folder is downloaded you have to move it from the download section to the $HOME:
+Once the zipped folder is downloaded you have to move it from the download section to the $HOME (or to another directory if you planned to install it there):
 ```shell
 mv $HOME/Downloads/root_vx.xx.xx.Linux-ubuntu18-x86_64-gccx.x.tar.gz $HOME/.
 ```
@@ -80,18 +80,18 @@ Close also the shell an reopen a new one and your installation is 100% completed
 
 Another way to install ROOT is via source code. This is another good way to install the framework, but since it is more complicated with respect to previous one, I suggest you to try this only in case the other one fails in any ways.
 
-First of all you have to download the release from this [link](https://root.cern/install/all_releases/); click on the latest release button and choose the source distribution link for download.
-> If you are installing ROOT in an Ubuntu shell of Windows you can type this command on the Ubuntu shell `explorer.exe .` (note the final dot) in order to know in which position of the Windows system is stored the Ubuntu folder. Then you can copy manually the downloaded ROOT folder from Windows to the Ubuntu previously mentioned folder.
+First of all you have to download the release from this [link](https://root.cern/install/all_releases/). Click on the latest release button and choose the source distribution link for download.
 
-Once the zipped folder is downloaded you have to move it from the download section to the home:
+Once the zipped folder is downloaded you have to move it from the download section to the home (or to another directory if you planned to install it there):
 ```shell
-mv $HOME/Downloads/root_vx.xx.xx.source.tar.gz
-$HOME/.
+mv $HOME/Downloads/root_vx.xx.xx.source.tar.gz $HOME/.
 ```
 where `Downloads` can be replaced with the name of the download folder of your computer (in italian usually is `Scaricati`).
 > Pay attention that `root_vx.xx.xx.source.tar.gz` have to be replaced with the name of the version you are installing. For example if you are installing the latest version it would be something like `root_v6.24.06.source.tar.gz`.
 
-Now unzip it, by typing this two commands:
+> If you are installing ROOT in an Ubuntu shell of Windows you can type this command on the Ubuntu shell `explorer.exe .` (note the final dot) in order to know in which position of the Windows system is stored the Ubuntu folder. Then you can copy manually the downloaded ROOT folder from Windows to the Ubuntu previously mentioned folder.
+
+Now unzip it by typing this two commands:
 ```shell
 gunzip root_vx.xx.xx.source.tar.gz
 tar -xvf root_vx.xx.xx.source.tar.tar
@@ -110,7 +110,7 @@ a) Create a build directory:
 ```shell
 mkdir root-build
 ```
-b) nter it:
+b) enter it:
 ```shell
 cd root-build
 ```
@@ -118,13 +118,15 @@ c) configure it:
 ```shell
 cmake $HOME/root-x.xx.xx
 ```
-> Please pay attention: if you planned to install ROOT in a different directory from the `$HOME` one, you have to replace the above command with `cmake path/to/folder/root-x.xx.xx` where `path/to/folder/` is the path to the folder in which you downloaded ROOT previously.
+> Please pay attention: if you planned to install ROOT in a different directory from `$HOME`, you have to replace the above command with `cmake path/to/folder/root-x.xx.xx` where `path/to/folder/` is the path to the folder in which you downloaded ROOT previously.
 
-d) compile it (this will take a while):
+d) and compile it (this will take a while):
 ```shell
 cmake --build .
 ```
-FInally, to complete the installation you have to set up the ROOT environment; in order to avoid repeating this latter command every time you enter the shell, you can do the following passages. Go in the `$HOME` directory:
+FInally, to complete the installation you have to set up the ROOT environment in order to avoid repeating this latter command every time you enter the shell. You can do the following passages:
+
+Go in the `$HOME` directory:
 ```shell
 cd $HOME
 ```
@@ -138,17 +140,19 @@ Go at the end of the file and add this line:
 ```shell
 source root-x.xx.xx/bin/thisroot.sh
 ```
-> Again remember to replace the `x`.
+> Again remember to replace the `x` with the version numbers (see previous passages).
 
-> Please pay attention: if you planned to install ROOT in a different directory from `$HOME`, you have to replace the above command with `source path/to/folder/root-x.xx.xx/bin/thisroot.sh` where `path/to/folder/` is the path to the folder in which you installed ROOT previously.
+> Please pay attention: if you planned to install ROOT in a different directory from `$HOME`, you have to replace the above command with `source path/to/folder/root-x.xx.xx/bin/thisroot.sh` where `path/to/folder/` is the path to the folder in which you unzipped ROOT previously.
 
-Now close the file and save it (Ctrl+X and then Ctrl+Y or Ctrl+S if you have an italian language shell). Close also the shell an reopen a new one and your installation is 100% completed. 
+Now close the file and save it (Ctrl+X and then Ctrl+Y or Ctrl+S if you have an italian language shell). 
+
+Close also the shell an reopen a new one and your installation is 100% completed. 
 
 ### Other installation methods (not recommended)
 
-There are other ways to install ROOT via package managers, however, since these packages are not maintained by the ROOT team, but by helpful members of the community, there may be issues in the installation regarding different versions of the operating system you use or many other. Therefore, consider this kind of installation as a last-chance installation method and use it only in case in which you failed with both the previous installations with binary and source and you plan to host a temporary root installation until you will be able to install a good one.
+There are other ways to install ROOT via package managers, however, since these packages are not maintained by the ROOT team, but by helpful members of the community, there may be issues in the installation regarding different versions of the operating system you use or other. Therefore, consider this kind of installation as a last-chance method and use it only in case in which you failed with both the previous installations with binary and source and in case you are planning to host a temporary root installation in your computer until you will be able to get a good one.
 
-The first method is with [Conda](https://www.anaconda.com/products/individual) package manager. You can get it from the previos link and type this commands in order to install ROOT:
+The first method is with [Conda](https://www.anaconda.com/products/individual) package manager. You can get it from the previous link and type this commands in order to install ROOT:
 ```shell
 conda config --set channel_priority strict
 conda create -c conda-forge --name environment root
@@ -158,7 +162,7 @@ and the installation is done.
 > Setting channel_priority to strict is required to avoid conflicts on some platforms
 > Further instructions on how to use this package can be found [here](https://iscinumpy.gitlab.io/post/root-conda/).
 
-The second method is with the [snap](https://snapcraft.io/docs/installing-snap-on-ubuntu):
+The second method is with [snap](https://snapcraft.io/docs/installing-snap-on-ubuntu):
 ```shell
 sudo snap install root-framework
 snap run root-framework

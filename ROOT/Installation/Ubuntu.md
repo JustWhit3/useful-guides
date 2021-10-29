@@ -29,7 +29,10 @@ sudo apt-get install gfortran libssl-dev libpcre3-dev xlibmesa-glu-dev libglew1.
 > There should be another very optional library to install which is `libqt4-dev`. Since if you run `sudo apt-get install libqt4-dev` it may gives you an error, you may try to manually add the repository with this command `sudo add-apt-repository ppa:rock-core/qt4`. If also this doesn't work don't worry, you can proceed with the guide also without having `libqt4-dev` installed and all will works perfectly. The fact is that the `libqt4-dev` package was dropped from Ubuntu after 19.10 and is indeed not in the 20.04 repositories.
 
 After the system has been updated, decide in which folder you want to install ROOT and enter it through the shell.
+
 > Pay attention: if you want to install it in the `$HOME` directory you don't have to do anything, just open a new shell and continue with the following steps. Instead, if you want to install it for example in a folder named `dir`, which is located in `path/to/directory` path, you have to type `cd path/to/directory/dir` first, and then proceed with the guide.
+
+> I recommend you to install it in the `$HOME` directory.
 
 ### Proceed via binary distribution (warmly recommended)
 

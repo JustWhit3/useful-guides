@@ -85,7 +85,8 @@ Remember that you have to run MobaXterm every time you want to use graphic inter
 > ```shell
 > export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
 > ```
-> Sometimes also this latter case doesn't solve the problem. In this situation you can try to install a different free-to-use X-server like [Xming](https://sourceforge.net/projects/xming/) or [VcXsrv](https://sourceforge.net/projects/vcxsrv/). Check also if you are trying to run commands as user and not as root: type:
+> Sometimes also this latter case doesn't solve the problem. In this situation you can try to install a different free-to-use X-server like [Xming](https://sourceforge.net/projects/xming/) or [VcXsrv](https://sourceforge.net/projects/vcxsrv/). 
+> Check also if you are trying to run commands as user and not as root: type:
 > ```shell
 > whoami
 > ```

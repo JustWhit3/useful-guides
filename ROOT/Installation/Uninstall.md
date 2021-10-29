@@ -36,4 +36,4 @@ where *nano* is the default editor you can use to open files (if you prefer you 
 source root/bin/thisroot.sh
 ```
 and remove it.
-> Sometimes the path may be different depending on the directory in which you installed ROOT or on the name of the ROOT folder you created when you previously installed the framework, typically it is: `root-build` or `root-x.xx.xx` (where `x.xx.xx` is the ROOT version name, for example 6.20.02).
+> Sometimes the path may be different depending on the directory in which you installed ROOT or on the name of the ROOT folder you created when you previously installed the framework, typically it is: `root`, `root-build` or `root-x.xx.xx` (where `x.xx.xx` is the ROOT version name, for example 6.20.02).

@@ -12,12 +12,12 @@ In this guide you can find two common ways of installing the C++ ROOT framework 
 
 Before choosing the installation method you have firstly to update your operating system, in order to be sure that all programs are correctly updated for the procedure. Open a fresh shell and type:
 ```shell
-softwareupdate -l
+softwareupdate --install -a
 ```
 After the system has been updated, decide in which folder you want to install ROOT and enter it throught the shell.
-> If you want to install it in the `$HOME` directory you don't have to do anything, just open a shell and continue with the following steps. Instead, if you want to install it for example in a folder named `dir`, which is located in `path/to/directory` path, you have to type `cd path/to/directory/dir` first, and then proceed with the guide.
+> If you want to install it in the `$HOME` directory you don't have to do anything, just open a shell and continue with the following steps. Instead, if you want to install it for example in a `dir` folder, which is located in `path/to/directory` path, you have to type `cd path/to/directory/dir` first, and then proceed with the guide.
 
-### Proceed via [brew](https://brew.sh/index_it) (recommended)
+### Proceed via brew (recommended)
 
 You can now continue with brew package manager installation:
 > If you have already installed brew you can skip this passage.
@@ -35,14 +35,17 @@ Now you can finally install root with:
 ```shell
 brew install root6
 ```
+> If you got errors after ROOT installation or in the `brew upgrade` passage you probably forgot to update your system with `softwareupdate --install -a` command.
 
-### Proceed via [MacPorts](https://www.macports.org/)
+### Proceed via MacPorts
 
 First, you have to install Xcode developer package:
 ```shell
 xcode-select --install
 ```
-Then, you can install [MacPorts](https://www.macports.org/) by clicking on the link and following the guide. And finally you have to type this command:
+Then, you can install [MacPorts](https://www.macports.org/) by clicking on the link and following the guide. 
+
+Finally you have to type this command:
 ```shell
 port install root6
 ```
@@ -53,7 +56,7 @@ Once tou have installed root, you need to check if all the features have been co
 ```shell
 root
 ```
-If the framework has been installed you should see something like this:
+If the framework has been installed correctly you should see something like this in the command prompt:
 ```shell
    ------------------------------------------------------------------
   | Welcome to ROOT 6.20/02                        https://root.cern |
@@ -65,9 +68,9 @@ If the framework has been installed you should see something like this:
 
 root [0] 
 ```
-then, type this command in order to see if also the graphical tools work:
+Now you are able to run macros and compile codes. To check if also the graphical tools work type this:
 ```shell
 root [0] new TBrowser()
 ```
-If a new window is opened then you have 100% completed the ROOT installation
+If a new window is opened then you have 100% completed the ROOT installation.
 > Please note that `root [0]` indicates the line number of the ROOT command prompt in which you are writing the current ROOT bash command, therefore, from the previous line, you have to copy only `new TBrowser()` in your shell.

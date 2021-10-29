@@ -9,15 +9,13 @@
 
 ## Installation
 
-In this guide you can find some common ways of installing the C++ ROOT framework in your MacOS operating system. There are many ways to proceed with the installation, however I **warmly** suggest you yo install Ubuntu via binary distribution, since this is the simpler and most efficient method to get the framework in your machine. Alternatively, and in case you cannot solve issues any way with binary installation, you have first to [uninstall](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Uninstall.md) the software and then to proceed with other installation possibilities: I suggest you first to try to buil ROOT from source code and if also this doesn't work (very unlikely) you can try alternative ways (try to avoid them if possible).
+In this guide you can find some common ways of installing the C++ ROOT framework in your Ubuntu operating system. There are many ways to proceed, however I **warmly** suggest you yo install Ubuntu via binary distribution, since this is the simpler and most efficient method to get the framework working in your machine. Alternatively, and in case you cannot any way solve issues with binary installation, you have first to [uninstall](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Uninstall.md) the software and then to proceed with other installation possibilities: I suggest you first to try to build ROOT from source code and if also this doesn't work (very unlikely) you can try alternative ways, but please try to avoid them if possible.
 
-Before choosing the installation method you have firstly to update your operating system, in order to be sure that all programs are correctly updated for the procedure. Open a fresh shell and type this two commands:
+Before choosing the installation method you have firstly to update your operating system, in order to be sure that all programs are correctly updated and set for the procedure. Open a fresh shell and enter this two commands:
 ```shell
 sudo apt-get upgrade
 sudo apt-get update
 ```
-After the system has been updated, decide in which folder you want to install ROOT and enter it through the shell.
-> If you want to install it in the `$HOME` directory you don't have to do anything, just open a shell and continue with the following steps. Instead, if you want to install it for example in a folder named `dir`, which is located in `path/to/directory` path, you have to type `cd path/to/directory/dir` first, and then proceed with the guide.
 
 First of all you have to install all the prerequisite packages. Mandatory are (type the following command on the shell):
 ```shell
@@ -29,6 +27,9 @@ sudo apt-get install gfortran libssl-dev libpcre3-dev xlibmesa-glu-dev libglew1.
 ```
 > Please note that it is warmly suggested to install also the prerequisite packages in order to avoid encountering future ROOT errors about libraries paths not found.
 > There should be another very optional library to install which is `libqt4-dev`. Since if you run `sudo apt-get install libqt4-dev` it may gives you an error, you may try to manually add the repository with this command `sudo add-apt-repository ppa:rock-core/qt4`. If also this doesn't work don't worry, you can proceed with the guide also without having `libqt4-dev` installed and all will works perfectly. The fact is that the `libqt4-dev` package was dropped from Ubuntu after 19.10 and is indeed not in the 20.04 repositories.
+
+After the system has been updated, decide in which folder you want to install ROOT and enter it through the shell.
+> Pay attention: if you want to install it in the `$HOME` directory you don't have to do anything, just open a new shell and continue with the following steps. Instead, if you want to install it for example in a folder named `dir`, which is located in `path/to/directory` path, you have to type `cd path/to/directory/dir` first, and then proceed with the guide.
 
 ### Proceed via binary distribution (warmly recommended)
 

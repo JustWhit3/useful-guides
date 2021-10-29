@@ -2,28 +2,29 @@
 
 ## Table of contents
 - [Installation](#installation)
-  * [Proceed via Windows subsystem for Linux (recommended)](#proceed-via-windows-subsystem-for-linux--recommended-)
+  * [Proceed via Windows subsystem for Linux (recommended)](#proceed-via-windows-subsystem-for-linux-recommended)
   * [Proceed via virtual machine](#proceed-via-virtual-machine)
+- [Installation check](#installation-check)
 
 ## Installation
 
-In this guide you can find two common ways of installing the C++ ROOT framework in your Windows operating system. You can proceed via [Windows subsystem for Linux](https://ubuntu.com/wsl) (recommended) if you have at least Windows 10 version or alternatively via [virtual machine](https://www.virtualbox.org/). In both these cases be sure that your operating system is updated.
+In this guide you can find two common ways of installing the C++ ROOT framework in your Windows operating system. You can proceed via [Windows subsystem for Linux](https://ubuntu.com/wsl) (recommended) if you have at least Windows 10 version, or alternatively via [virtual machine](https://www.virtualbox.org/). In both the cases be sure that your operating system is **updated**.
 
 ### Proceed via Windows subsystem for Linux (recommended)
 
-If you have at least Windows 10 version installed you can proceed with this section, otherwise skip this section and go to the next one. 
+If you have at least Windows 10 version installed you can proceed with this section, otherwise skip it and go to the next one. 
 
-First of all you have to install on Windows [Windows subsystem for Linux](https://ubuntu.com/wsl) and a free-to-use X-server for the correct graphical visualization on the Ubuntu shell, I suggest you [MobaXterm](https://mobaxterm.mobatek.net/). Then, you have to open a new Ubuntu shell (go to the search pannel, type "Ubuntu" and open it) and you can finally proceed with the ROOT installation by following one of the [Ubuntu](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Ubuntu.md) guides I wrote, but come back here once you have finished with them, since there is a very last passage to do.
+First of all you have to install the [Windows subsystem for Linux](https://ubuntu.com/wsl) (WSL) environment and a free-to-use X-server for the correct graphical visualization on the Ubuntu shell; I suggest you [MobaXterm](https://mobaxterm.mobatek.net/). Once WSL is installed, you have to open a new Ubuntu shell (go to the search pannel, type "Ubuntu" and open it) and you can finally proceed with the ROOT installation by following one of the [Ubuntu](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Ubuntu.md) guides I wrote. **Remember** to come back here once you have finished with them, since there is a very last passage to do to complete the procedure.
 
 > Please remember that if you want to see in which position of the Windows system is saved the Ubuntu subsystem you can type `explorer.exe .` (note the final dot) in the Ubuntu shell.
 
-After the ROOT installation is completed, you need to install the packages useful for graphical visualization; type this on the Ubuntu shell:
+After the ROOT installation is completed, you need to install the packages useful for graphical visualization. Enter this command on the Ubuntu shell:
 ```shell
 sudo apt-get install libtiff5 x11-apps
 ```
-> You may encounter a new error `libtinfo.so.5: cannot open shared object file: No such file or directory`. In this case you can easily solve by downloading it separately with this command `sudo apt-get install libncurses5`.
+> You may encounter a new error `libtinfo.so.5: cannot open shared object file: No such file or directory`. In this case you can easily solve it by downloading that single library separately with this command `sudo apt-get install libncurses5`.
 
-You have now to set the display variable: be sure of being in the `$HOME` directory:
+You have now to set the display variable. Be sure of being in the `$HOME` directory:
 ```shell
 cd $HOME
 ```
@@ -31,15 +32,47 @@ and open the .bashrc file:
 ```shell
 nano .bashrc
 ```
-> `nano` is the name of the default editor of Ubuntu. You can also use better editors like *gedit*, *emacs*, *code* or whatever you prefer.
+> *nano* is the name of the default editor of Ubuntu, but you can also use better editors like *gedit*, *emacs*, *code* or other if you prefer.
 
 go at the end of the file and add this line:
 ```shell
 export DISPLAY=:0
 ```
-close the file and save it (Ctrl+X and then Ctrl+Y or Ctrl+S if you have an italian language shell). Now close the shell an reopen a new one and your installation is 100% completed. 
+close the file and save it (Ctrl+X and then Ctrl+Y or Ctrl+S if you have an italian language shell). 
 
-To check it: run MobaXterm by clicking two times on its Windows desktop icon (you don't have to do anything else more) and follow the "Installation check" part of the [Ubuntu](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Ubuntu.md) installation guide to check if ROOT works correctly. Remember that you have to run MobaXterm every time you want to use graphic interface on Ubuntu shell.
+Now close the shell an reopen a new one and your installation is 100% completed. 
+
+## Installation check
+To check the installation run MobaXterm by clicking two times on its Windows desktop icon (you don't have to do anything else more)
+
+Now open a new shell and type:
+```shell
+root
+```
+If the framework has been correctly installed you should see something like this:
+```shell
+   ------------------------------------------------------------------
+  | Welcome to ROOT 6.20/02                        https://root.cern |
+  | (c) 1995-2020, The ROOT Team; conception: R. Brun, F. Rademakers |
+  | Built for linuxx8664gcc on Sep 22 2021, 10:57:00                 |
+  | From tag , 15 March 2020                                         |
+  | Try '.help', '.demo', '.license', '.credits', '.quit'/'.q'       |
+   ------------------------------------------------------------------
+
+root [0] 
+```
+Now you are able to run and compile macros. Then, enter this command in order to see if also the graphical tools work:
+```shell
+root [0] new TBrowser()
+```
+If a new window is opened then you have 100% completed the ROOT installation.
+
+Remember that you have to run MobaXterm every time you want to use graphic interface on Ubuntu shell.
+
+> Please note that `root [0]` indicates the line number of the ROOT command prompt in which you are writing the current ROOT bash command, therefore, from the previous line, you have to copy only `new TBrowser()` in your shell.
+
+> In some very rare cases may happens also that some libraries are not recognized when trying to load or run a macro. You may try to solve this issue by installing the package dependencies as root user. See this [video guide](https://www.youtube.com/watch?v=nkKxNBuqsB0&t=186s).
+
 > Sometimes it may happens that a similar error is displayed when you try to run `new TBrowser()` command in ROOT shell:
 > ```shell
 > Error: Can't open display: :0

@@ -22,8 +22,7 @@ After the system has been updated, decide in which folder you want to install RO
 
 ### Proceed via brew (recommended)
 
-You can now continue with brew package manager installation:
-> If you have already installed brew you can skip this passage.
+You can now continue with brew package manager installation (if you have already installed brew you can skip this passage):
 ```shell
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```

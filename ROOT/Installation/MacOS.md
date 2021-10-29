@@ -30,7 +30,7 @@ You can now continue with brew package manager installation (if you have already
 
 Now you can update and upgrade brew packages with (enter the commands one after the other):
 ```shell
-brew updated
+brew update
 brew upgrade
 ```
 Now you can finally install root with:

@@ -86,11 +86,11 @@ Remember that you have to run MobaXterm every time you want to use graphic inter
 > export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
 > ```
 > Sometimes also this latter case doesn't solve the problem. In this situation you can try to install a different free-to-use X-server like [Xming](https://sourceforge.net/projects/xming/) or [VcXsrv](https://sourceforge.net/projects/vcxsrv/). 
-> Check also if you are trying to run commands as user and not as root: type:
+> Check also if you are trying to run commands as user and not as root; enter on the shell:
 > ```shell
 > whoami
 > ```
-> If `root` is displayed you have to switch from *root* user to the real user of your machine; supposing the real user is called *name* you can do it by typing:
+> If `root` is displayed than you have to switch from *root* user to the real user of your machine; supposing the real user is called *name* you can do it by typing:
 > ```shell
 > su - name
 > ```

@@ -127,6 +127,8 @@ d) and compile it (this will take a while):
 ```shell
 cmake --build .
 ```
+> Sometimes it may happens that Cmake compilation crashes. This could be due to an error you did in one of the previous passages, or it may be related to the fact that you forgot updating the system before. However there is also the possibility that, since this compilation command takes several minutes (and maybe hours) it crashes for other motivations regarding your machine. In this latter case you can simply try to run the command again without doing anything else more.
+
 FInally, to complete the installation you have to set up the ROOT environment in order to avoid repeating this latter command every time you enter the shell. You can do the following passages:
 
 Go in the `$HOME` directory:

@@ -2,7 +2,7 @@
 
 ## Table of contents
 - [Compile and run a ROOT macro depending on other classes](#compile-and-run-a-ROOT-macro-depending-on-other-classes)
-- [Run ROOT commands without entering ROOT shell everytime](#run-root-commands-without-entering-root-shell-erytime)
+- [Run ROOT commands without entering ROOT shell ever ytime](#run-root-commands-without-entering-root-shell-every-time)
 
 ## Compile and run a ROOT macro depending on other classes
 
@@ -25,7 +25,7 @@ and manually load the class.
 
 > If you have more than one class you have to do this passage for every single class, starting by the one which less depends on the other until the one which depends more.
 
-Now a file named *class_cpp.so* has been created in the current folder in which you run the previous command, it contains informations for the future macro loading. This passage has to be repeated everytime you modify a class. If you write a class and then you have to run only the *macro.cpp* macro, you don't need to repeat the previous command anymore.
+Now a file named *class_cpp.so* has been created in the current folder in which you run the previous command, it contains informations for the future macro loading. This passage has to be repeated ever ytime you modify a class. If you write a class and then you have to run only the *macro.cpp* macro, you don't need to repeat the previous command anymore.
 
 2) Open the ROOT macro with you editor, add the include class .h files at the top of the macro and load the class into it by using this two lines of code:
 ```c++
@@ -47,4 +47,39 @@ gROOT->LoadMacro("macro.cpp+")
 macro()
 ```
 
-## Run ROOT commands without entering ROOT shell everytime
+## Run ROOT commands without entering ROOT shell every time
+
+In case in which you are running multiple ROOT commands and than have to exit ROOT every time to perform other operations, there is a smart solution to automate this process, usefule to run ROOT commands into a .sh shell script without the needing of entering the ROOT shell even once.
+
+First of all, enter the directory in which you plan to create the script that is usually the directory in which you are developing your project:
+```shell
+cd directory
+```
+> If it is `$HOME` you can ignore the previous command.
+
+and create the new .sh script:
+```shell
+touch script.sh
+```
+Now open it with you editor (default is *nano*) and write this lines of bash code:
+```shell
+root << EOF
+... ROOT commands ...
+EOF
+```
+Looking at it line by line: you are first giving the shell a command for opening ROOT and to tell it to write some bash commands from `EOF` until it will encounter `EOF` again. Between them you can write several ROOT commands (ex: `gROOT->LoadMacro("class.cpp+")`) you have normally wrote entering ROOT everytime and running them into the ROOT shell itself.
+
+Now close and save the script (Ctrl+X and Ctrl+Y or Ctrl+S in case of an italian shell) and make it executable:
+```shell
+chmod +x script.sh
+```
+If you now enter in the shell:
+```shell
+ls
+```
+you can see that the script name has become green; this means that the script is finalle executable. 
+
+Now, whenever you want to launch the script and make it execute all the commands contained in it, you have to simply enter:
+```shell
+./script.sh
+```

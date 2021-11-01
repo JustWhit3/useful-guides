@@ -21,7 +21,7 @@ Here the list of the current folder of the repository:
 
        > Hint: if you have to download an Ubuntu release (for example for Windows) it is recommended to download an [LTS](https://ubuntu.com/blog/what-is-an-ubuntu-lts-release) version of it.
   * 💥 [**Quick tips**](https://github.com/JustWhit3/useful-guides/tree/main/ROOT/Quick%20tips): which contains tips for ROOT beginners. You can find something related to the following topics:
-    - [Compiling and Running](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Quick%20tips/Compilation%20and%20Running.md) (work in progress): which contains for example some tips about how to compile ROOT macros which depend on other user classes or how to run ROOT macros without entering the ROOT command prompt every time.
+    - [Compiling and Running](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Quick%20tips/Compilation%20and%20Running.md): which contains for example some tips about how to compile ROOT macros which depend on other user classes or how to run ROOT macros without entering the ROOT command prompt every time.
     - [ROOT on VS Code](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Quick%20tips/ROOT%20on%20VS%20Code.md) (work in progress): which explains how to set ROOT framework on VS Code.
 
 ## Credits

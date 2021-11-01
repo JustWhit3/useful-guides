@@ -2,7 +2,7 @@
 
 ## Table of contents
 - [Compile and run a ROOT macro depending on other classes](#compile-and-run-a-ROOT-macro-depending-on-other-classes)
-- [Run ROOT commands without entering ROOT shell ever ytime](#run-root-commands-without-entering-root-shell-every-time)
+- [Run ROOT commands without entering ROOT shell every time](#run-root-commands-without-entering-root-shell-every-time)
 
 ## Compile and run a ROOT macro depending on other classes
 
@@ -17,15 +17,15 @@ In order to correctly compile and run the *macro.cpp* file you have to follow so
 ```shell
 root
 ```
-and manually load the class.
+and manually load the class:
 ```shell
 .L class.cpp+
 ```
 > Add `+` at the end of the macro name in order to force the C++ compilation.
 
-> If you have more than one class you have to do this passage for every single class, starting by the one which less depends on the other until the one which depends more.
+> If you have more than one class you have to do this passage for every single one, starting by the one which less depends on the other until the one which depends more.
 
-Now a file named *class_cpp.so* has been created in the current folder in which you previously run command. It contains information for the future macro loading. 
+Now a file named *class_cpp.so* has been created in the current folder and contains information for the future macro loading. 
 
 > This passage has to be repeated every time you modify a class. If you write a class, but then you have to only run the *macro.cpp* macro, you don't need to repeat the previous command anymore.
 
@@ -42,7 +42,7 @@ Ok, now the work is completed and, supposing the *macro.cpp* has a function name
 macro()
 ```
 
-Remember also that steps 1. and 2. can be summarized simply entering the ROOT shell and directly using the `gROOT` pointer:
+Remember also that steps 1. and 2. can be summarized by simply entering the ROOT shell and directly using the `gROOT` pointer:
 ```shell
 gROOT->LoadMacro("class.cpp+")
 gROOT->LoadMacro("macro.cpp+")
@@ -63,14 +63,20 @@ and create the new .sh script:
 ```shell
 touch script.sh
 ```
-Now open it with an editor (default is *nano*) and write this lines of bash code:
+Now open it with an editor:
+```shell
+nano script.sh
+```
+> Default editor is *nano*, but you can use other like *gedit* or *code.
+
+and write this lines of bash code inside the script:
 ```shell
 root << EOF
 ... ROOT commands ...
 .q
 EOF
 ```
-Looking at it line by line: you are firstly giving the shell a command for opening ROOT and telling it to write some ROOT bash commands from `EOF` to `EOF` (ex: `gROOT->LoadMacro("class.cpp+")` and many more) including the command to exit the ROOT shell `.q` in order to come back to the normal shell once the previous commands are completed. This operations would have been normally perfomed entering ROOT everytime and running bash instructions into the ROOT shell itself.
+Looking at it line by line: you are firstly giving the shell a command for opening ROOT and telling it to write some ROOT bash commands from `EOF` to `EOF` (ex: `gROOT->LoadMacro("class.cpp+")` and many others) including the command to exit the ROOT shell `.q`, used to come back to the normal shell once the previous commands are completed. This operations would have been normally perfomed entering ROOT everytime and running bash instructions into the ROOT shell itself.
 
 Now close and save the script (Ctrl+X and Ctrl+Y or Ctrl+S in case of an italian shell) and make it executable:
 ```shell
@@ -78,11 +84,11 @@ chmod +x script.sh
 ```
 > This operation has to be perfomed only once.
 
-If you now enter the list command in the shell:
+If you now enter this command in the shell:
 ```shell
 ls
 ```
-you can see that the script name has become of green color; this means that the script is finally executable. 
+you can see that the script name has become of green color indicating that the script is finally executable. 
 
 Now, whenever you want to launch the script and make it execute all the commands contained in it, you have to simply enter:
 ```shell

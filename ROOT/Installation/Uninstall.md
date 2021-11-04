@@ -9,7 +9,7 @@ To uninstall the framework from your computer you have firstly to open an Ubuntu
 > cd /path/to/root/folder
 > ```
 > where `/path/to/root/folder` is the path to reach the root installation folder. 
-> 
+
 Now type this command:
 ```shell
 ls
@@ -23,7 +23,9 @@ rm -rf root-folder-name
 where `root-folder-name` is the name of the folder containing the ROOT code.
 > If you have to delete more than one folder, repeat the above command for each folder name or put all the folder names in one line separated by a space.
 
-Now, if you are not already in the `$HOME` directory reach it by typing:
+If you are in MacOS operating system, the uninstallation procedure ends here, otherwise proceed with this last steps.
+
+If you are not already in the `$HOME` directory reach it by typing:
 ```shell
 cd $HOME
 ```

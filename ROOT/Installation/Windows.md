@@ -34,9 +34,10 @@ nano .bashrc
 ```
 > *nano* is the name of the default editor of Ubuntu, but you can also use better editors like *gedit*, *emacs*, *code* or other if you prefer.
 
-go at the end of the file and add this line:
+go at the end of the file and add this two lines:
 ```shell
 export DISPLAY=:0
+export LIBGL_ALWAYS_INDIRECT=1
 ```
 close the file and save it (Ctrl+X and then Ctrl+Y or Ctrl+S if you have an italian language shell). 
 

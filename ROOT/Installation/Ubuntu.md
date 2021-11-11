@@ -46,7 +46,7 @@ mv $HOME/Downloads/root_vx.xx.xx.Linux-ubuntu18-x86_64-gccx.x.tar.gz $HOME/.
 where `Downloads` can be replaced with the name of the download folder of your computer (in italian usually is `Scaricati`).
 > Pay attention that `root_vx.xx.xx.Linux-ubuntu18-x86_64-gccx.x.tar.gz` have to be replaced with the name of the version you are installing. For example if you are installing the Ubuntu 20 binary it would be something like `root_v6.24.06.Linux-ubuntu20-x86_64-gcc9.3.tar.gz`. You can easily see it at the moment of the download of the release.
 
-> If you are installing ROOT on an Ubuntu shell of Windows you can type this command on the Ubuntu shell `explorer.exe .` (note the final dot) in order to know in which position of the Windows system is stored the Ubuntu folder. Then you can copy manually the downloaded ROOT folder from Windows to the Ubuntu previously mentioned folder.
+> **For Windows users**: if you are installing ROOT on an Ubuntu shell of Windows you can type this command on the Ubuntu shell `explorer.exe .` (note the final dot) in order to know in which position of the Windows system is stored the Ubuntu folder. Then you can copy manually the downloaded ROOT folder from Windows to the Ubuntu previously mentioned folder.
 
 Now unzip it by typing this two commands:
 ```shell
@@ -92,7 +92,7 @@ mv $HOME/Downloads/root_vx.xx.xx.source.tar.gz $HOME/.
 where `Downloads` can be replaced with the name of the download folder of your computer (in italian usually is `Scaricati`).
 > Pay attention that `root_vx.xx.xx.source.tar.gz` have to be replaced with the name of the version you are installing. For example if you are installing the latest version it would be something like `root_v6.24.06.source.tar.gz`.
 
-> If you are installing ROOT in an Ubuntu shell of Windows you can type this command on the Ubuntu shell `explorer.exe .` (note the final dot) in order to know in which position of the Windows system is stored the Ubuntu folder. Then you can copy manually the downloaded ROOT folder from Windows to the Ubuntu previously mentioned folder.
+> **For Windows users**: if you are installing ROOT in an Ubuntu shell of Windows you can type this command on the Ubuntu shell `explorer.exe .` (note the final dot) in order to know in which position of the Windows system is stored the Ubuntu folder. Then you can copy manually the downloaded ROOT folder from Windows to the Ubuntu previously mentioned folder.
 
 Now unzip it by typing this two commands:
 ```shell

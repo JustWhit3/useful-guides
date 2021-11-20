@@ -24,7 +24,9 @@ sudo apt-get install libtiff5 x11-apps
 ```
 > You may encounter a new error `libtinfo.so.5: cannot open shared object file: No such file or directory`. In this case you can easily solve it by downloading that single library separately with this command `sudo apt-get install libncurses5`.
 
-You have now to set the display variable. Be sure of being in the `$HOME` directory:
+You have now to set the display variable. 
+> If you already set this variable in the past, this last passage is not necessary and you can skip it.
+Be sure of being in the `$HOME` directory:
 ```shell
 cd $HOME
 ```
@@ -36,7 +38,7 @@ nano .bashrc
 
 go at the end of the file and add this two lines:
 ```shell
-export DISPLAY=:0
+export DISPLAY="$(/sbin/ip route | awk 'default/ { print $3 }'):0"
 export LIBGL_ALWAYS_INDIRECT=1
 ```
 close the file and save it (Ctrl+X and then Ctrl+Y or Ctrl+S if you have an italian language shell). 
@@ -78,14 +80,11 @@ Remember that you have to run MobaXterm every time you want to use graphic inter
 > ```shell
 > Error: Can't open display: :0
 > ```
-> It means that your display variable is not set correctly and graphic interface doesn't work. A solution may be to replace this definition in the .bashrc file with:
+> It means that your display variable is not set correctly and graphic interface doesn't work. A solution may be to replace this definition in the .bashrc file with the IP address of your Xserver. If you are working for example with MobaXterm, you can open it, click on "start local terminal" and copy the IP address written in "Your DISPLAY is set to..." line of the box. Than you have to open a new terminal and enter:
 > ```shell
-> export DISPLAY=localhost:0.0
+> export DISPLAY=XX.XX.XX.XXX:0.0
 > ```
-> in order to configure bash to use the local X-server. If also this doesn't work you can try to set the X-server IP address which could be found here `/ets/resolv/conf` by replacing the previous command with:
-> ```shell
-> export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
-> ```
+> Where `XX.XX.XX.XXX:0.0` has to be replaced with the correct IP address you copied. Remember that this solution works only for the terminal in which you are working in. If you close the shell and open a new one, you have to repeat this very last passage. In this particular situation, avoid copying the previous command in the .bashrc file, since if your IP address changes, than you have to modify the .bashrc file every time.
 > Sometimes also this latter case doesn't solve the problem. In this situation you can try to install a different free-to-use X-server like [Xming](https://sourceforge.net/projects/xming/) or [VcXsrv](https://sourceforge.net/projects/vcxsrv/). 
 > Check also if you are trying to run commands as user and not as root; enter on the shell:
 > ```shell

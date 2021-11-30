@@ -39,7 +39,7 @@ nano .bashrc
 
 go at the end of the file and add this two lines:
 ```shell
-export DISPLAY="$(/sbin/ip route | awk 'default/ { print $3 }'):0"
+export DISPLAY="$(/sbin/ip route | awk '/default/ { print $3 }'):0"
 export LIBGL_ALWAYS_INDIRECT=1
 ```
 close the file and save it (Ctrl+X and then Ctrl+Y or Ctrl+S if you have an italian language shell). 

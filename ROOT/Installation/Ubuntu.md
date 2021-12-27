@@ -143,11 +143,9 @@ nano .bashrc
 
 Go at the end of the file and add this line:
 ```shell
-source root-x.xx.xx/bin/thisroot.sh
+source root-build/bin/thisroot.sh
 ```
-> Again remember to replace the `x` with the version numbers (see previous passages).
-
-> Please pay attention: if you planned to install ROOT in a different directory from `$HOME`, you have to replace the above command with `source path/to/folder/root-x.xx.xx/bin/thisroot.sh` where `path/to/folder/` is the path to the folder in which you unzipped ROOT previously.
+> Please pay attention: if you planned to install ROOT in a different directory from `$HOME`, you have to replace the above command with `source path/to/folder/root-build/bin/thisroot.sh` where `path/to/folder/` is the path to the folder in which you unzipped ROOT previously.
 
 Now close the file and save it (Ctrl+X and then Ctrl+Y or Ctrl+S if you have an italian language shell). 
 

@@ -174,9 +174,7 @@ and the installation is completed.
 
 ## Installation check
 
-Once tou have installed root, you need to check if all the features have been correctly installed. O
-
-pen a new shell and type:
+Once tou have installed root, you need to check if all the features have been correctly installed. Open a new shell and type:
 ```shell
 root
 ```

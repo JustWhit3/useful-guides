@@ -37,12 +37,21 @@ nano .bashrc
 ```
 > *nano* is the name of the default editor of Ubuntu, but you can also use better editors like *gedit*, *emacs*, *code* or other if you prefer.
 
-go at the end of the file and add this two lines:
+go at the end of the file and if you use WSL2 add this two lines:
 ```shell
 export DISPLAY="$(/sbin/ip route | awk '/default/ { print $3 }'):0"
 export LIBGL_ALWAYS_INDIRECT=1
 ```
-close the file and save it (Ctrl+X and then Ctrl+Y or Ctrl+S if you have an italian language shell). 
+instead, if you use WSL1 add:
+```shell
+export DISPLAY=:0
+export LIBGL_ALWAYS_INDIRECT=1
+```
+close the file and save it (Ctrl+X and then Ctrl+Y or Ctrl+S if you have an italian language shell).
+> To know your WSL version open the Powershell (the Windows terminal, NOT the Ubuntu one) and enter:
+> ```shell
+> wsl -l -v
+> ```
 
 Now close the shell an reopen a new one and your installation is 100% completed. 
 

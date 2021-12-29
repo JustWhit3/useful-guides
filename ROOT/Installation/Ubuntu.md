@@ -1,12 +1,16 @@
 # ROOT framework installation on Ubuntu operating system
 
 ## Table of contents
+- [Shell script installer](#shell-script-installer)
 - [Installation](#installation)
   * [Proceed via binary distribution (warmly recommended)](#proceed-via-binary-distribution-warmly-recommended)
   * [Proceed via source code](#proceed-via-source-code)
   * [Other installation methods (not recommended)](#other-installation-methods-not-recommended)
 - [Installation check](#installation-check)
 
+## Shell script installer
+
+Before talking about the real guide, I inform you that I developed a shell script that automatically install the ROOT framework in your computer, by only entering just a command in the terminal command prompt! This script is available for Ubuntu, Windows and MacOS operating systems and fully supports many of the common installation methods (binary, source, package manager etc...). You can find more information and instructions about how to use it, [here](https://github.com/JustWhit3/root-framework-installer). If you prefer to install the framework manually and to check step-by-step passages during the installation, therefore you can continue with the following guide.
 ## Installation
 
 In this guide you can find some common ways of installing the C++ ROOT framework in your Ubuntu operating system. There are many ways to proceed, however I **warmly** suggest you yo install Ubuntu via binary distribution, since this is the simplest and most efficient method to get the framework working in your machine. Alternatively, and in case you cannot any way solve issues with binary installation, you have first to [uninstall](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Uninstall.md) the software and then to proceed with other installation possibilities: I suggest you first to try to build ROOT from source code and if also this doesn't work (very unlikely) you can try alternative ways, but please try to avoid them if possible.

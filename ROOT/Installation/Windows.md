@@ -1,10 +1,15 @@
 # ROOT framework installation on Windows operating system
 
 ## Table of contents
+- [Shell script installer](#shell-script-installer)
 - [Installation](#installation)
   * [Proceed via Windows subsystem for Linux (recommended)](#proceed-via-windows-subsystem-for-linux-recommended)
   * [Proceed via virtual machine](#proceed-via-virtual-machine)
 - [Installation check](#installation-check)
+
+## Shell script installer
+
+Before talking about the real guide, I inform you that I developed a shell script that automatically install the ROOT framework in your computer, by only entering just a command in the terminal command prompt! This script is available for Ubuntu, Windows and MacOS operating systems and fully supports many of the common installation methods (binary, source, package manager etc...). You can find more information and instructions about how to use it, [here](https://github.com/JustWhit3/root-framework-installer). If you prefer to install the framework manually and to check step-by-step passages during the installation, therefore you can continue with the following guide.
 
 ## Installation
 

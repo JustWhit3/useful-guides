@@ -27,6 +27,7 @@ useful-guides/
 │   │   ├── Compilation and Running.md
 │   │   ├── ROOT on VS Code.md
 │── README.md
+│── CITATION.cff
 │── License
 ```
 

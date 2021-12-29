@@ -166,7 +166,8 @@ conda create -c conda-forge --name environment root
 conda activate environment
 ```
 and the installation is done.
-> Setting channel_priority to strict is required to avoid conflicts on some platforms
+> Setting channel_priority to strict is required to avoid conflicts on some platforms.
+
 > Further instructions on how to use this package can be found [here](https://iscinumpy.gitlab.io/post/root-conda/).
 
 The second method is with [snap](https://snapcraft.io/docs/installing-snap-on-ubuntu):

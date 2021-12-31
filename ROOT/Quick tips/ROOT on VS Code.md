@@ -10,7 +10,7 @@
 
 Many of you may have encountered a problem for which, when writing a ROOT macro on VS Code, ROOT include paths are not recognized by the IDE:
 
-<img src="https://github.com/JustWhit3/useful-guides/blob/main/img/ROOT_vscode.png" width="500" height="170">
+<img src="https://github.com/JustWhit3/useful-guides/blob/main/img/ROOT_vscode.png" width="500">
 
 This ca be easily solved by following this passages:
 
@@ -29,7 +29,7 @@ This ca be easily solved by following this passages:
 
 In case you have trouble visualizing ROOT histograms in the TBrowser, you can partially solve this by installing the *ROOT File Viewer* extension for VS Code.
 
-<img src="https://github.com/JustWhit3/useful-guides/blob/main/img/ROOT_extension.png" width="500" height="200">
+<img src="https://github.com/JustWhit3/useful-guides/blob/main/img/ROOT_extension.png" width="450">
 
 Thanks to this you can easily navigate through .root files histograms and visualize them, but you cannot perform operations between histograms directly from this visualizer. More information can be found [here](https://root.cern/blog/vscode-extension-announcement/).
 

@@ -34,5 +34,3 @@ In case you have trouble visualizing ROOT histograms in the TBrowser, you can pa
 Thanks to this you can easily navigate through .root files histograms and visualize them, but you cannot perform operations between histograms directly from this visualizer. More information can be found [here](https://root.cern/blog/vscode-extension-announcement/).
 
 <img src="https://github.com/JustWhit3/useful-guides/blob/main/img/vscode_extension.gif">
-=======
->>>>>>> d62d53acc2c01c84fbcf35d1e86fefd04e90db1d

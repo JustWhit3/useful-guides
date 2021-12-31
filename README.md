@@ -18,6 +18,7 @@ In this repository you can find a set of useful guides I wrote for beginners. Be
 Repository diagram structure:
 ```
 useful-guides/
+├── img/
 ├── ROOT/
 │   ├── Installation/
 │   │   ├── MacOS.md
@@ -47,4 +48,4 @@ Here the list of the current folder of the repository:
 Some of the material of this repository has been taken and modified / mixed from the following people / courses:
 - Slides of Prof. [Silvia Arcelli](https://www.unibo.it/sitoweb/silvia.arcelli) from the course "[Laboratorio di Elettromagnetismo e Ottica [Modulo 3]](https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2021/434322)" at University of Bologna, for the ROOT installation on Ubuntu, MacOS and Windows.
 - CERN ROOT [installing page](https://root.cern/install/) for the ROOT installation from alternative ways.
-
+- [This](https://mylifeaccordingtome2.wordpress.com/2019/12/15/sviluppare-in-c-con-root-usando-visual-studio-code/) website for the ROOT on VS Code guide.

@@ -16,11 +16,11 @@ This ca be easily solved by following this passages:
 
 1) Go on the top of your VS Code IDE and click on *View* -> *Command palette*. Then search for *Edit configurations (UI)* and click on it.
 
-<img src="https://github.com/JustWhit3/useful-guides/blob/main/img/edit_config.png">
+<img src="https://github.com/JustWhit3/useful-guides/blob/main/img/edit_config.png" width="700">
 
 2) Search for *One include path per line* option and add a new line with the path to your ROOT directory, as in the example screenshot below:
 
-<img src="https://github.com/JustWhit3/useful-guides/blob/main/img/include_path.png">
+<img src="https://github.com/JustWhit3/useful-guides/blob/main/img/include_path.png" width="700">
 
 3) Save, close VS Code and reopen it and now the problem of ROOT include path recognition is disappeared.
 <<<<<<< HEAD
@@ -29,7 +29,7 @@ This ca be easily solved by following this passages:
 
 In case you have trouble visualizing ROOT histograms in the TBrowser, you can partially solve this by installing the *ROOT File Viewer* extension for VS Code.
 
-<img src="https://github.com/JustWhit3/useful-guides/blob/main/img/ROOT_extension.png">
+<img src="https://github.com/JustWhit3/useful-guides/blob/main/img/ROOT_extension.png" width="500" height="200">
 
 Thanks to this you can easily navigate through .root files histograms and visualize them, but you cannot perform operations between histograms directly from this visualizer. More information can be found [here](https://root.cern/blog/vscode-extension-announcement/).
 

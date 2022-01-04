@@ -23,7 +23,6 @@ This ca be easily solved by following this passages:
 <img src="https://github.com/JustWhit3/useful-guides/blob/main/img/include_path.png" width="700">
 
 3) Save, close VS Code and reopen it and now the problem of ROOT include path recognition is disappeared.
-<<<<<<< HEAD
 
 ## ROOT File Viewer extension
 

@@ -72,3 +72,8 @@ Thanks to all the people who contributed to this guides:
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
+Other people:
+
+- [Prof. Silvia Arcelli](https://www.unibo.it/sitoweb/silvia.arcelli).
+- [Unknown user](https://mylifeaccordingtome2.wordpress.com/2019/12/15/sviluppare-in-c-con-root-usando-visual-studio-code/).

@@ -1,7 +1,4 @@
 <p align="center"><img src="https://github.com/JustWhit3/useful-guides/blob/main/img/logo.svg" height=220></p>
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <h3 align="center">A set of useful guides I wrote for beginners</h3>
 <p align="center">
@@ -57,9 +54,9 @@ Here the list of the current folder of the repository:
     - [Compiling and Running](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Quick%20tips/Compilation%20and%20Running.md): which contains for example some tips about how to compile ROOT macros which depend on other user classes or how to run ROOT macros without entering the ROOT command prompt every time.
     - [ROOT on VS Code](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Quick%20tips/ROOT%20on%20VS%20Code.md): which explains how to set ROOT framework on VS Code.
 
-## Contributors ✨
+## Credits
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Thanks to all the people who contributed to this guides:
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -74,5 +71,3 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "AlbertoPdRF",
+      "name": "Alberto Pérez de Rada Fiol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26309166?v=4",
+      "profile": "https://albertopdrf.com",
+      "contributions": [
+        "ideas"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "useful-guides",
+  "projectOwner": "JustWhit3",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}

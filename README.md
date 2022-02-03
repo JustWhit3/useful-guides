@@ -41,10 +41,11 @@ useful-guides/
 │── README.md
 │── CITATION.cff
 │── CREDITS.md
+│── CONTRIBUTING.md
 │── License
 ```
 
-Here the list of the current folder of the repository:
+Here the list of the main folders of the repository:
 - [**ROOT**](https://github.com/JustWhit3/useful-guides/tree/main/ROOT): which contains [ROOT](https://github.com/root-project/root) framework guides, and in particular the following sub-folders:
   * 💿 [**Installation**](https://github.com/JustWhit3/useful-guides/tree/main/ROOT/Installation): which contains installation guides I wrote for students of the bachelor degree in physics at University of Bologna. These guides have been written by considering all the common issues students had during the framework installation procedure. They are available for the following operating systems: [MacOS](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/MacOS.md), [Windows](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Windows.md) and [Ubuntu](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Ubuntu.md). An extra document for ROOT [uninstallation](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Uninstall.md) is also provided.
        > Note: in case you have previously installed an old or not working ROOT version, I warmly suggest you to first uninstall it before proceeding with a new one.

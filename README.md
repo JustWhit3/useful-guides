@@ -14,6 +14,9 @@
 - [Introduction](#introduction)
 - [Structure of the repository](#structure-of-the-repository)
 - [Credits](#credits)
+  * [Repository leaders](#repository-leaders)
+  * [Other contributors](#other-contributors)
+  * [Other people with no GitHub account](#other-people-with-no-github-account)
 
 ## Introduction
 
@@ -57,14 +60,20 @@ Here the list of the main folders of the repository:
 
 ## Credits
 
-Thanks to all the people who contributed to this guides:
+### Repository leaders
+
+<table>
+  <tr>
+    <td align="center"><a href="https://justwhit3.github.io/"><img src="https://avatars.githubusercontent.com/u/48323961?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Gianluca Bianco</b></sub></a><br /><a href="#projectManagement-JustWhit3" title="Project Management">📆</a></td>
+</table>
+
+### Other contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://justwhit3.github.io/"><img src="https://avatars.githubusercontent.com/u/48323961?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Gianluca Bianco</b></sub></a><br /><a href="#projectManagement-JustWhit3" title="Project Management">📆</a></td>
     <td align="center"><a href="https://albertopdrf.com"><img src="https://avatars.githubusercontent.com/u/26309166?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alberto Pérez de Rada Fiol</b></sub></a><br /><a href="#ideas-AlbertoPdRF" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
@@ -74,7 +83,7 @@ Thanks to all the people who contributed to this guides:
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-Other people:
+### Other contributors with no GitHub account
 
 - [Prof. Silvia Arcelli](https://www.unibo.it/sitoweb/silvia.arcelli).
 - [Unknown user](https://mylifeaccordingtome2.wordpress.com/2019/12/15/sviluppare-in-c-con-root-usando-visual-studio-code/).

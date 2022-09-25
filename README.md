@@ -1,6 +1,6 @@
 <p align="center"><img src="https://github.com/JustWhit3/useful-guides/blob/main/img/logo.svg" height=220></p>
 
-<h3 align="center">A set of useful guides I wrote for beginners about frameworks installation and general computing and physics teaching</h3>
+<h3 align="center">A set of useful guides I wrote for beginners about general computing and physics teaching</h3>
 <p align="center">
     <img title="v1.1" alt="v1.1" src="https://img.shields.io/badge/version-v1.1-informational?style=flat-square"
     <a href="LICENSE">

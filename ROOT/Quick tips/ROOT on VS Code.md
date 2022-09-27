@@ -12,9 +12,9 @@ Many of you may have encountered a problem for which, when writing a ROOT macro 
 
 <img src="https://github.com/JustWhit3/useful-guides/blob/main/img/ROOT_vscode.png" width="500">
 
-This ca be easily solved by following this passages:
+This ca be easily solved by following this steps:
 
-1) Go on the top of your VS Code IDE and click on *View* -> *Command palette*. Then search for *Edit configurations (UI)* and click on it.
+1) Go on the top of your VS Code IDE and click on *View* -> *Command palette*. Then, search for *Edit configurations (UI)* and click on it.
 
 <img src="https://github.com/JustWhit3/useful-guides/blob/main/img/edit_config.png" width="700">
 
@@ -22,7 +22,7 @@ This ca be easily solved by following this passages:
 
 <img src="https://github.com/JustWhit3/useful-guides/blob/main/img/include_path.png" width="700">
 
-3) Save, close VS Code and reopen it and now the problem of ROOT include path recognition is disappeared.
+3) Save, close VS Code and reopen it and now the problem of ROOT include paths recognition is disappeared.
 
 ## ROOT File Viewer extension
 
@@ -30,6 +30,8 @@ In case you have trouble visualizing ROOT histograms in the TBrowser, you can pa
 
 <img src="https://github.com/JustWhit3/useful-guides/blob/main/img/ROOT_extension.png" width="450">
 
-Thanks to this you can easily navigate through .root files histograms and visualize them, but you cannot perform operations between histograms directly from this visualizer. More information can be found [here](https://root.cern/blog/vscode-extension-announcement/).
+Thanks to this you can easily navigate through .root files and histograms and visualize them, but you cannot perform operations between histograms directly from this visualizer. 
+
+More information can be found [here](https://root.cern/blog/vscode-extension-announcement/).
 
 <img src="https://github.com/JustWhit3/useful-guides/blob/main/img/vscode_extension.gif">

@@ -3,13 +3,13 @@
 ## Table of contents
 - [Shell script installer](#shell-script-installer)
 - [Installation](#installation)
-  * [Proceed via Windows subsystem for Linux (recommended)](#proceed-via-windows-subsystem-for-linux-recommended)
-  * [Proceed via virtual machine](#proceed-via-virtual-machine)
+  - [Proceed via Windows subsystem for Linux (recommended)](#proceed-via-windows-subsystem-for-linux-recommended)
+  - [Proceed via virtual machine](#proceed-via-virtual-machine)
 - [Installation check](#installation-check)
 
 ## Shell script installer
 
-Before talking about the real guide, I inform you that I developed a shell script that automatically install the ROOT framework in your computer, by only entering just a command in the terminal command prompt! This script is available for Ubuntu, Windows and MacOS operating systems and fully supports many of the common installation methods (binary, source, package manager etc...). You can find more information and instructions about how to use it, [here](https://github.com/JustWhit3/root-framework-installer). If you prefer to install the framework manually and to check step-by-step passages during the installation, therefore you can continue with the following guide.
+Before talking about the real guide, I want to inform you that I developed a shell script that automatically install the ROOT framework in your computer, by only entering just a command in the terminal command prompt! This script is available for Ubuntu, Windows and MacOS operating systems and fully supports many of the common installation methods (binary, source, package manager etc...). You can find more information and instructions about how to use it [here](https://github.com/JustWhit3/root-framework-installer). If you prefer to install the framework manually and to check step-by-step passages during the installation (recommended), therefore you can continue with the following guide.
 
 ## Installation
 
@@ -21,39 +21,51 @@ If you have at least Windows 10 version installed you can proceed with this sect
 
 First of all you have to install the [Windows subsystem for Linux](https://ubuntu.com/wsl) (WSL) environment and a free-to-use X-server for the correct graphical visualization on the Ubuntu shell; I suggest you [MobaXterm](https://mobaxterm.mobatek.net/). Once WSL is installed, you have to open a new Ubuntu shell (go to the search pannel, type "Ubuntu" and open it) and you can finally proceed with the ROOT installation by following one of the [Ubuntu](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Ubuntu.md) guides I wrote. **Remember** to come back here once you have finished with them, since there is a very last passage to do to complete the procedure.
 
-> Please remember also that if you want to see in which position of the Windows system is saved the Ubuntu subsystem you can type `explorer.exe .` (note the final dot) in the Ubuntu shell.
+> :warning: Please remember also that if you want to see in which position of the Windows system is saved the Ubuntu subsystem you can type `explorer.exe .` (note the final dot) in the Ubuntu shell.
 
 After the ROOT installation is completed, you need to install the packages useful for graphical visualization. Enter this command on the Ubuntu shell:
+
 ```shell
 sudo apt-get install libtiff5 x11-apps
 ```
-> You may encounter a new error `libtinfo.so.5: cannot open shared object file: No such file or directory`. In this case you can easily solve it by downloading that single library separately with this command `sudo apt-get install libncurses5`.
 
-You have now to set the display variable. 
-> If you already set this variable in the past, this last passage is not necessary and you can skip it.
+> :warning: You may encounter a new error `libtinfo.so.5: cannot open shared object file: No such file or directory`. In this case you can easily solve it by downloading that single library separately with this command `sudo apt-get install libncurses5`.
+
+You have now to set the display variable.
+
+> :warning: If you already set this variable in the past, this last passage is not necessary and you can skip it.
 
 Be sure of being in the `$HOME` directory:
+
 ```shell
 cd $HOME
 ```
+
 and open the .bashrc file:
+
 ```shell
 nano .bashrc
 ```
-> *nano* is the name of the default editor of Ubuntu, but you can also use better editors like *gedit*, *emacs*, *code* or other if you prefer.
+
+> :warning: *nano* is the name of the default editor of Ubuntu, but you can also use better editors like *gedit*, *emacs*, *code* or other if you prefer.
 
 go at the end of the file and if you use WSL2 add this two lines:
+
 ```shell
 export DISPLAY="$(/sbin/ip route | awk '/default/ { print $3 }'):0"
 export LIBGL_ALWAYS_INDIRECT=1
 ```
+
 instead, if you use WSL1 add:
+
 ```shell
 export DISPLAY=:0
 export LIBGL_ALWAYS_INDIRECT=1
 ```
+
 close the file and save it (Ctrl+X and then Ctrl+Y or Ctrl+S if you have an italian language shell).
-> To know your WSL version open the Powershell (the Windows terminal, NOT the Ubuntu one) and enter:
+
+> :warning: To know your WSL version open the Powershell (the Windows terminal, NOT the Ubuntu one) and enter:
 > ```shell
 > wsl -l -v
 > ```
@@ -64,10 +76,13 @@ Now close the shell an reopen a new one and your installation is 100% completed.
 To check the installation run MobaXterm by clicking two times on its Windows desktop icon (you don't have to do anything else more)
 
 Now open a new shell and type:
+
 ```shell
 root
 ```
+
 If the framework has been correctly installed you should see something like this:
+
 ```shell
    ------------------------------------------------------------------
   | Welcome to ROOT 6.20/02                        https://root.cern |
@@ -79,19 +94,22 @@ If the framework has been correctly installed you should see something like this
 
 root [0] 
 ```
+
 Now you are able to run and compile macros. Then, enter this command in order to see if also the graphical tools work:
+
 ```shell
 root [0] new TBrowser()
 ```
+
 If a new window is opened then you have 100% completed the ROOT installation.
 
 Remember that you have to run MobaXterm every time you want to use graphic interface on Ubuntu shell.
 
-> Please note that `root [0]` indicates the line number of the ROOT command prompt in which you are writing the current ROOT bash command, therefore, from the previous line, you have to copy only `new TBrowser()` in your shell.
+> :warning: Please note that `root [0]` indicates the line number of the ROOT command prompt in which you are writing the current ROOT bash command, therefore, from the previous line, you have to copy only `new TBrowser()` in your shell.
 
-> In some very rare cases may happens also that some libraries are not recognized when trying to load or run a macro. You may try to solve this issue by installing the package dependencies as root user. See this [video guide](https://www.youtube.com/watch?v=nkKxNBuqsB0&t=186s).
+> :warning: In some very rare cases may happens also that some libraries are not recognized when trying to load or run a macro. You may try to solve this issue by installing the package dependencies as root user. See this [video guide](https://www.youtube.com/watch?v=nkKxNBuqsB0&t=186s).
 
-> Sometimes it may happens that a similar error is displayed when you try to run `new TBrowser()` command in ROOT shell:
+> :warning: Sometimes it may happens that a similar error is displayed when you try to run `new TBrowser()` command in ROOT shell:
 > ```shell
 > Error: Can't open display: :0
 > ```
@@ -101,7 +119,7 @@ Remember that you have to run MobaXterm every time you want to use graphic inter
 > ```
 > Where `XX.XX.XX.XXX:0.0` has to be replaced with the correct IP address you copied. Remember that this solution works only for the terminal in which you are working in. If you close the shell and open a new one, you have to repeat this very last passage. In this particular situation, avoid copying the previous command in the .bashrc file, since if your IP address changes, than you have to modify the .bashrc file every time.
 
-> Sometimes also this latter case doesn't solve the problem. In this situation you can try to install a different free-to-use X-server like [Xming](https://sourceforge.net/projects/xming/) or [VcXsrv](https://sourceforge.net/projects/vcxsrv/). 
+> :warning: Sometimes also this latter case doesn't solve the problem. In this situation you can try to install a different free-to-use X-server like [Xming](https://sourceforge.net/projects/xming/) or [VcXsrv](https://sourceforge.net/projects/vcxsrv/). 
 > Check also if you are trying to run commands as user and not as root; enter on the shell:
 > ```shell
 > whoami

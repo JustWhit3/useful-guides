@@ -9,7 +9,7 @@
 Here I want to show you how to compile and run a ROOT macro which depends on other classes.
 
 Supposing you have a class which declarations are written in *class.h* file and implementations in *class.cpp* file and you want to include it in a ROOT generation macro called *macro.cpp*, which contains ROOT objects and has needs ro be run inside the ROOT shell.
-> :warning: remember to name the *macro.cpp* functions differently from the usual `int main(){}` since you may encounter a `TApplication` error during the macro execution.
+> :warning: Remember to name the *macro.cpp* functions differently from the usual `int main(){}` since you may encounter a `TApplication` error during the macro execution.
 
 In order to correctly compile and run the *macro.cpp* file you have to follow some steps.
 

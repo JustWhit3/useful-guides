@@ -43,7 +43,7 @@ brew upgrade
 Now you can finally install root with:
 
 ```shell
-brew install root6
+brew install root
 ```
 
 > :warning: If you get errors after ROOT installation or in the `brew upgrade` passage you probably forgot to update your system with `softwareupdate --install -a` command.

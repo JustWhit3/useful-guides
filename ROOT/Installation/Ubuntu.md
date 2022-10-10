@@ -17,17 +17,22 @@ Before talking about the real guide, I want to inform you that I developed a she
 In this guide you can find some common ways of installing the C++ ROOT framework in your Ubuntu operating system. There are many ways to proceed, however I **warmly** suggest you yo install Ubuntu via binary distribution, since this is the simplest and most efficient method to get the framework working in your machine. Alternatively, and in case you cannot any way solve issues with binary installation, you have first to [uninstall](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Uninstall.md) the software and then to proceed with other installation possibilities: I suggest you first to try to build ROOT from source code and if also this doesn't work (very unlikely) you can try alternative ways, but please try to avoid them if possible.
 
 Before choosing the installation method you have firstly to update your operating system, in order to be sure that all programs are correctly updated and set for the procedure. Open a fresh shell and enter this two commands:
+
 ```shell
 sudo apt upgrade
 sudo apt update
 ```
+
 Now you have to install all the prerequisite packages. Mandatory are (type the following command on the shell):
+
 ```shell
 sudo apt install git dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev
 ```
+
 Other not mandatory, but recommended are:
+
 ```shell
-sudo apt install gfortran libssl-dev libpcre3-dev xlibmesa-glu-dev libglew1.5-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python-dev libxml2-dev libkrb5-dev libgsl0-dev
+sudo apt install gfortran libssl-dev libpcre3-dev xlibmesa-glu-dev libftgl-dev libmysqlclient-dev libfftw3-dev libcfitsio-dev graphviz-dev libavahi-compat-libdnssd-dev libldap2-dev python2-dev libxml2-dev libkrb5-dev libgsl0-dev
 ```
 > :warning: Please note that it is warmly suggested to install also the prerequisite packages in order to avoid encountering future ROOT errors about libraries paths not found.
 

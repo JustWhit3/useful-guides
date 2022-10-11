@@ -19,7 +19,9 @@ In this guide you can find two common ways of installing the C++ ROOT framework 
 
 If you have at least Windows 10 version installed you can proceed with this section, otherwise skip it and go to the next one. 
 
-First of all you have to install the [Windows subsystem for Linux](https://ubuntu.com/wsl) (WSL) environment and a free-to-use X-server for the correct graphical visualization on the Ubuntu shell; I suggest you [MobaXterm](https://mobaxterm.mobatek.net/). Once WSL is installed, you have to open a new Ubuntu shell (go to the search pannel, type "Ubuntu" and open it) and you can finally proceed with the ROOT installation by following one of the [Ubuntu](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Ubuntu.md) guides I wrote. **Remember** to come back here once you have finished with them, since there is a very last passage to do to complete the procedure.
+First of all you have to install the [Windows subsystem for Linux](https://ubuntu.com/wsl) (WSL) environment and a free-to-use X-server for the correct graphical visualization on the Ubuntu shell; I suggest you [MobaXterm](https://mobaxterm.mobatek.net/). Once WSL is installed, you have to open a new Ubuntu shell (go to the search pannel, type "Ubuntu" and open it) and you can finally proceed with the ROOT installation by following one of the [Ubuntu](https://github.com/JustWhit3/useful-guides/blob/main/ROOT/Installation/Ubuntu.md) guides I wrote. 
+
+**Remember** to come back here once you have finished with them, since there is a very last passage to do to complete the procedure.
 
 > :warning: Please remember also that if you want to see in which position of the Windows system is saved the Ubuntu subsystem you can type `explorer.exe .` (note the final dot) in the Ubuntu shell.
 
@@ -31,7 +33,7 @@ sudo apt-get install libtiff5 x11-apps
 
 > :warning: You may encounter a new error `libtinfo.so.5: cannot open shared object file: No such file or directory`. In this case you can easily solve it by downloading that single library separately with this command `sudo apt-get install libncurses5`.
 
-You have now to set the display variable.
+If you don't have Windows 11 installed you have now to set the display variable and proceed with this section. Otherwise skip it and go to the [Installation Check](#installation-check).
 
 > :warning: If you already set this variable in the past, this last passage is not necessary and you can skip it.
 

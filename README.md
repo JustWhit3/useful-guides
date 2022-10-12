@@ -60,9 +60,12 @@ List of guides contained in the [**ROOT**](https://github.com/JustWhit3/useful-g
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
-  <tr>
-    <td align="center"><a href="https://albertopdrf.com"><img src="https://avatars.githubusercontent.com/u/26309166?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alberto Pérez de Rada Fiol</b></sub></a><br /><a href="#ideas-AlbertoPdRF" title="Ideas, Planning, & Feedback">🤔</a></td>
-  </tr>
+  <tbody>
+    <tr>
+      <td align="center"><a href="https://albertopdrf.com"><img src="https://avatars.githubusercontent.com/u/26309166?v=4?s=100" width="100px;" alt="Alberto Pérez de Rada Fiol"/><br /><sub><b>Alberto Pérez de Rada Fiol</b></sub></a><br /><a href="#ideas-AlbertoPdRF" title="Ideas, Planning, & Feedback">🤔</a></td>
+      <td align="center"><a href="https://www.luckee.dev"><img src="https://avatars.githubusercontent.com/u/61506420?v=4?s=100" width="100px;" alt="Luca Zoppetti"/><br /><sub><b>Luca Zoppetti</b></sub></a><br /><a href="https://github.com/JustWhit3/useful-guides/pulls?q=is%3Apr+reviewed-by%3ALuckeeDev" title="Reviewed Pull Requests">👀</a></td>
+    </tr>
+  </tbody>
 </table>
 
 <!-- markdownlint-restore -->

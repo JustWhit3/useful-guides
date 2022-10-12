@@ -45,24 +45,20 @@ After the system has been updated, decide in which folder you want to install RO
 Once you have completed the prerequisites you can proceed with the real installation. As previously mentioned, this is (in my opinion)  the most efficient and intuitive way to install the ROOT framework. First of all you have to download the release from this [link](https://root.cern/install/all_releases/); click on the **latest** release button and choose the binary distribution corresponding to your operating system version.
 
 > :warning: To know the operating system version of your computer simply type this command on the shell: `lsb_release -a`.
- 
-Once the zipped folder is downloaded you have to move it from the download section to the $HOME (or to another directory if you planned to install it there):
+
+To download the release copy the link of the zipped file under the "Files" column (in the ROOT web page) and use the `wget` command in the terminal (pay attention to the next warning also):
 
 ```shell
-mv $HOME/Downloads/root_vx.xx.xx.Linux-ubuntu18-x86_64-gccx.x.tar.gz $HOME/.
+wget https://root.cern/download/root_vx.xx.xx.Linux-ubuntuxx-x86_64-gccx.x.tar.gz
 ```
 
-where `Downloads` can be replaced with the name of the download folder of your computer (in italian usually is `Scaricati`).
-
-> :warning: Pay attention that `root_vx.xx.xx.Linux-ubuntu18-x86_64-gccx.x.tar.gz` have to be replaced with the name of the version you are installing. For example if you are installing the Ubuntu 20 binary it would be something like `root_v6.24.06.Linux-ubuntu20-x86_64-gcc9.3.tar.gz`. You can easily see it at the moment of the download of the release.
-
-> :warning: **For Windows users**: if you are installing ROOT on an Ubuntu shell of Windows you can type this command on the Ubuntu shell `explorer.exe .` (note the final dot) in order to know in which position of the Windows system is stored the Ubuntu directory. Then you can manually copy the downloaded ROOT folder from Windows to the Ubuntu previously mentioned folder.
+> :warning: Pay attention that `root_vx.xx.xx.Linux-ubuntuxx-x86_64-gccx.x.tar.gz` have to be replaced with the name of the version you are installing. For example if you are installing the Ubuntu 20 binary it would be something like `root_v6.24.06.Linux-ubuntu20-x86_64-gcc9.3.tar.gz`. You can easily see it at the moment of the download of the release.
 
 Now unzip it by typing these two commands:
 
 ```shell
-gunzip root_vx.xx.xx.Linux-ubuntu18-x86_64-gccx.x.tar.gz
-tar -xvf root_vx.xx.xx.Linux-ubuntu18-x86_64-gccx.x.tar
+gunzip root_vx.xx.xx.Linux-ubuntuxx-x86_64-gccx.x.tar.gz
+tar -xvf root_vx.xx.xx.Linux-ubuntuxx-x86_64-gccx.x.tar
 ```
 
 > :warning: Remember again to replace the `x` with the version numbers.

@@ -103,17 +103,13 @@ Another way to install ROOT is via source code. This is another good way to inst
 
 First of all you have to download the release from this [link](https://root.cern/install/all_releases/). Click on the latest release button and choose the source distribution link for download.
 
-Once the zipped folder is downloaded you have to move it from the download section to the home (or to another directory if you planned to install it there):
+To download the release copy the link of the zipped file under the "Files" column (in the ROOT web page) and use the `wget` command in the terminal (pay attention to the next warning also):
 
 ```shell
-mv $HOME/Downloads/root_vx.xx.xx.source.tar.gz $HOME/.
+wget https://root.cern/download/root_vx.xx.xx.source.tar.gz
 ```
 
-where `Downloads` can be replaced with the name of the download folder of your computer (in italian usually is `Scaricati`).
-
 > :warning: Pay attention that `root_vx.xx.xx.source.tar.gz` have to be replaced with the name of the version you are installing. For example if you are installing the latest version it would be something like `root_v6.24.06.source.tar.gz`.
-
-> :warning: **For Windows users**: if you are installing ROOT in an Ubuntu shell of Windows you can type this command on the Ubuntu shell `explorer.exe .` (note the final dot) in order to know in which position of the Windows system is stored the Ubuntu folder. Then you can copy manually the downloaded ROOT folder from Windows to the Ubuntu previously mentioned folder.
 
 Now unzip it by typing these two commands:
 
